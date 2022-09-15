@@ -1,0 +1,33 @@
+/* === Small CSS Reset === */
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+*, *::after, *::before{
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fdbf00;
+}
+
+.card {
+  border: 1px solid white;
+  width: 640px;
+  height: 400px;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  -webkit-perspective: 1200px;
+  perspective: 1200px;
+}
+.outside, .inside {
+  border: 1px solid black;
+  height: 100%;
+  width: 50%;
+  position: absolute;
+}

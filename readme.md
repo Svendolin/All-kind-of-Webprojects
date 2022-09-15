@@ -33,7 +33,7 @@ FOO FAS BAZ:
 ***
 | PROJECT | TITLE | CONTENT |
 |:--------------| :--------------| :--------------|
-|01| BIRTHDAY CARD | Animated Birthday Card for a friend (HTML, CSS, JS) |
+|01| BIRTHDAY CARD | Animated Birthday Card for a friend (HTML, CSS) |
 
 
 <br />
