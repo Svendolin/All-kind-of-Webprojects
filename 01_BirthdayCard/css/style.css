@@ -9,7 +9,9 @@
 }
 
 body {
-  background-color: #fdbf00;
+  background-image: url('../img/wood.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .card {
@@ -33,6 +35,7 @@ body {
 
 .card:hover .outside {
   transform: rotateY(-130deg);
+  cursor: pointer;
 }
 
 .outside, 
@@ -46,13 +49,25 @@ body {
 
 /* TEXT from the outside of the card */
 .outside p {
-  font-size: 23px;
+  font-size: 20px;
   text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: solid;
   margin-top: 30px;
   text-align: center;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
   color: #000046;
-  font-weight: normal;
+}
+
+p.hover {
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: solid;
+  margin-top: 10px;
+  text-align: center;
+  letter-spacing: 2px;
+  color: #000046;
 }
 
 .outside {
@@ -68,7 +83,7 @@ body {
     to right,
     #e0e0e0,
     #ffffff 30%);
-    line-height: 3px;
+    line-height: 3;
     padding: 0 20px;
     text-align: center;
     display: flex;
@@ -76,10 +91,17 @@ body {
     justify-content: space-around;
     align-items: center;
     left: 50%;
+    border: 1px solid;
+    box-shadow: 5px 10px 28px #000000;
+}
+
+img {
+  height: 280px;
+  border-radius: 10px;
 }
 
 .inside p {
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .front,
