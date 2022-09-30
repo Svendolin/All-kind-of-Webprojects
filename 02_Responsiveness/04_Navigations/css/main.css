@@ -1,0 +1,646 @@
+/* CSS Variablen */
+
+
+:root {
+  --blue: #01579b;
+  --dark-blue: #024478;
+  --main-font-family: 'Open Sans', sans-serif;
+  --gradient: linear-gradient(
+    45deg,
+    #845ec2
+      );
+}
+
+/* ----------------------------------------------- Navbar – (Aufgabe 1) ---------------------------------------------- */
+
+.nav-bar {
+  position: fixed;
+  z-index: 10;
+  display: flex;
+  width: 100%;
+  height: 85px;
+  padding: 0 25px 0 50px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--blue);
+}
+
+.logo-link {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo-text {
+  margin: 0 0 0 10px;
+  font-family: var(--main-font-family);
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-ul {
+  display: flex;
+  margin-bottom: 0;
+  padding-left: 0;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-li {
+  display: flex;
+  height: 100%;
+  padding: 0 15px 0 15px;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.nav-text {
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile-nav-button {
+  display: none;
+  width: 110px;
+  margin-left: 30px;
+  border-radius: 3px;
+  background-color: #fff;
+  color: var(--blue);
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+}
+
+.buy-now-button {
+  width: 110px;
+  margin-left: 30px;
+  border-radius: 3px;
+  background-color: #fff;
+  color: var(--blue);
+  line-height: 16px;
+  text-align: center;
+}
+
+.button-text {
+  margin-bottom: 0;
+  padding: 10px 0 10px 0;
+  font-size: 16px;
+}
+
+.button-text.hero {
+  height: auto;
+  padding: 15px 0 15px 0;
+}
+
+
+
+/* ----------------------------------------------- Hero Section – (Aufgabe 2) ---------------------------------------------- */
+
+
+
+.hero {
+  width: 100%; /* vh macht meistens Mühe, deshalb lieber % */
+  height: 100vh;
+  padding-top: 85px;
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-left {
+  width: 50%;
+  /* background-color: yellow; */
+  padding: 0 12.5% 0 12.5%;
+}
+
+.hero-content-container {
+  max-width: 300px;
+}
+
+.hero-h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #000;
+  font-family: var(--main-font-family);
+}
+
+.hero-h2 {
+  margin-bottom: 0;
+  color: #000;
+  font-family: var(--main-font-family);
+  font-size: 23px;
+  line-height: 27px;
+  font-weight: 400;
+}
+
+.hero-button {
+  display: flex;
+  width: 150px;
+  margin-top: 25px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  background-color: var(--blue);
+  font-family: var(--main-font-family);
+  color: #fff;
+}
+
+.hero-right {   /*beinhaltet das div keinen Text, so wäre die Höhe anzugeben sinnvoll, ansonsten wird nichts angezeigt */
+  width: 50%;
+  /* background-color: green; */
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image {
+  height: 80%;
+  width: 100%;
+  background-image: url('../images/hero-image.jpg');
+  background-position: 50% 50%;  /* Mittiger Ankerpunkt, wie in Photoshop */
+  background-size: cover; /* Liquide im Container darstellen */
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.image-slider-container {
+  width: 60%;
+  background-color: var(--blue);
+  padding: 40px;
+  color: white;
+  margin: 0 30px 30px 0;
+}
+
+.slider-controls-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-top: 30px;
+}
+
+.control.right {
+  margin-left: 10px;
+}
+
+.arrow-icon.right {
+  transform: rotate(180deg);
+
+}
+
+.control {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff; 
+}
+
+
+
+/* ----------------------------------------------- Gallery Section – (Aufgabe 3) ---------------------------------------------- */
+
+
+
+
+.gallery {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  min-height: 900px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #01579b;
+}
+
+.gallery-container {
+  position: relative;
+  display: grid;
+  width: 80%;
+  height: 550px;
+  max-width: 900px;
+  justify-content: flex-start;
+  justify-items: center;
+  flex-wrap: wrap;
+  align-items: start;
+  align-content: start;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.gallery-h2 {
+  margin-top: 0;
+  margin-bottom: 45px;
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  font-size: 38px;
+  line-height: 44px;
+  text-align: center;
+}
+
+.gallery-image {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  align-self: auto;
+  order: 0;
+}
+
+.image {
+  flex: 1;
+}
+
+.load-more-button {
+  display: flex;
+  width: 180px;
+  height: auto;
+  margin-top: 60px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #01579b;
+  text-align: center;
+}
+
+.button-text {
+  margin-bottom: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+
+/* -------------------------------------- ////// Responsiveness Tablet 990px ////// ------------------------------------ */
+
+@media screen and (max-width: 990px) {   /*KLEINERGLECIH ≤ 990px */
+  .logo-text {
+    display: none;
+  }
+
+  .nav-ul {
+    width: 100%;
+  }
+
+  .nav-items {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .buy-now-button {
+    margin-left: 0;
+  }
+
+  .hero  {
+    flex-direction: column;
+  }
+
+  .hero-right {
+    order: -1;  /* Kehrt die Reihenfolge um. Column reverse würde alles umkehren, was kacke ist */
+    width: 100%;
+    padding: 0 50px 0 50px;
+  }
+
+  .image-slider-container {
+    max-width: 350px;
+    margin-bottom: 0;
+    transform: translate(0, 80px); /* Rahmen bleibt, aber der Inhalt lässt sich verschieben. Kennen wir schon durch CSS Animations */
+  }
+
+  .hero-left {
+    padding: 0 50px 0 50px;
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .hero-content-container {
+    margin: 80px 0 80px 30px;
+  }
+
+  #grid-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    row-gap: 10px;
+    column-gap: 10px;
+  }
+
+  .image-wrapper:nth-child(1) {
+    grid-row-end: span 1;
+    grid-column-end: span 1;
+  }
+
+
+}
+
+/* -------------------------------------////// Responsiveness Mobile 660px ////// ----------------------------------- */
+
+
+@media screen and (max-width: 760px) {   /*KLEINERGLECIH ≤ 760px */
+  .nav-bar {
+    position: fixed;
+    padding-left: 40px;
+  }
+
+  .logo-link {
+    position: relative;
+    z-index: 1;
+  }
+
+  .nav-ul {
+    max-width: 450px;
+    padding: 60px 0 60px 0;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-li {
+    margin: 15px 0 15px 0;
+  }
+
+  .nav-text {
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  .nav-items {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: auto;
+    bottom: auto;
+    display: none;
+    height: 440px;
+    margin-top: 85px;
+    padding: 0 40px 0 40px;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: var(--dark-blue);
+  }
+
+  .mobile-nav-button {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    width: 110px;
+    margin-left: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    color: var(--blue);
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .buy-now-button {
+    display: block;
+    width: 100%;
+    max-width: 450px;
+    margin-left: 0;
+    padding: 5px 0 5px 0;
+    border-radius: 5px;
+    font-size: 25px;
+  }
+
+  .button-text {
+    margin-bottom: 0;
+    padding: 10px 0 10px 0;
+    border-radius: 3px;
+    line-height: 20px;
+  }
+
+  .menu-icon {
+    height: 12px;
+    margin-right: 10px;
+  }
+
+  .hero {
+    padding: 0;
+    height: 600px;
+  }
+
+  .hero-left {
+    position: absolute; /* Damit der text unabhängig vom Rest darüberliegt */
+    display: flex;
+    margin-left: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-content-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;  /* Damit sich der Button unten eingliedert */
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+  }
+
+  .hero-h1 {
+    text-align: center;
+    color: white;
+  }
+
+  .hero-h2 {
+    text-align: center;
+    color: white;
+  }
+
+
+  .hero-right {
+    padding: 0;
+  }
+
+  .image-slider-container {
+    display: none;
+  }
+
+  .hero-image {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.60)),
+    url('../images/hero-image.jpg');
+  }
+}
+
+/* -------------------------------------////// GRID LAYOUT GALLERY MEDIA QUERIES ////// ----------------------------------- */
+
+
+@media screen and (max-width: 991px) {
+  .gallery-container {
+    height: 500px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .gallery-image {
+    height: 100%;
+  }
+
+  .gallery-image:last-child {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .button-text {
+    margin-bottom: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 3px;
+    line-height: 20px;
+  }
+
+  .gallery {
+    height: auto;
+    justify-content: flex-start;
+  }
+
+  .gallery-container {
+    height: auto;
+    max-width: 400px;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+  }
+
+  .gallery-h2 {
+    font-size: 30px;
+    line-height: 34px;
+  }
+
+  .load-more-button {
+    width: 200px;
+  }
+
+  .gallery-image {
+    width: 100%;
+    height: 250px;
+  }
+
+  .gallery-image:nth-child(5) {
+    display: none;
+  }
+
+  .gallery-image:nth-child(4) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .gallery-container {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-h2 {
+    font-size: 25px;
+    line-height: 27px;
+  }
+
+  .load-more-button {
+    width: 150px;
+  }
+
+  .gallery-image {
+    height: 220px;
+  }
+}
+
+.gallery-image:nth-child(1) {
+  grid-row-start: span 2;
+  grid-row-end: span 2;
+  grid-column-start: span 2;
+  grid-column-end: span 2;
+}
+
+@media screen and (max-width: 991px) {
+  .gallery-image:nth-child(1) {
+    grid-row-start: span 1;
+    grid-row-end: span 1;
+    grid-column-start: span 3;
+    grid-column-end: span 3;
+  }
+
+  .gallery-image:nth-child(2) {
+    grid-row-start: span 1;
+    grid-row-end: span 1;
+    grid-column-start: span 3;
+    grid-column-end: span 3;
+  }
+
+  .gallery-image:nth-child(3) {
+    grid-row-start: span 1;
+    grid-row-end: span 1;
+    grid-column-start: span 2;
+    grid-column-end: span 2;
+  }
+
+  .gallery-image:nth-child(4) {
+    grid-row-start: span 1;
+    grid-row-end: span 1;
+    grid-column-start: span 2;
+    grid-column-end: span 2;
+  }
+
+  .gallery-image:nth-child(5) {
+    grid-row-start: span 1;
+    grid-row-end: span 1;
+    grid-column-start: span 2;
+    grid-column-end: span 2;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .gallery-image:nth-child(1) {
+    grid-row-start: span 1;
+    grid-row-end: span 1;
+    grid-column-start: span 1;
+    grid-column-end: span 1;
+  }
+
+  .gallery-image:nth-child(2) {
+    grid-row-start: span 1;
+    grid-row-end: span 1;
+    grid-column-start: span 1;
+    grid-column-end: span 1;
+  }
+
+  .gallery-image:nth-child(3) {
+    grid-row-start: span 1;
+    grid-row-end: span 1;
+    grid-column-start: span 1;
+    grid-column-end: span 1;
+  }
+
+  .gallery-image:nth-child(4) {
+    grid-row-start: span 1;
+    grid-row-end: span 1;
+    grid-column-start: span 3;
+    grid-column-end: span 3;
+  }
+}

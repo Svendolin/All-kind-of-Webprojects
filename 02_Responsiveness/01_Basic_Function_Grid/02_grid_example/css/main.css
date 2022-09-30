@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #304ffe;
+}
+
+.gallery-wrapper {
+  padding: 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-title {
+  font-family: sans-serif;
+  color: white;
+  font-size: 30px;
+  line-height: 35px;
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+    'hero-image hero-image hero-info'
+    'hero-image hero-image hero-info';
+  gap: 20px;
+  grid-auto-rows: 1fr;
+  align-items: center;
+  justify-items: center;
+  max-width: 1000px;
+}
+
+.gallery-image-wrapper {
+  display: flex;
+  min-height: 150px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.gallery-image {
+  width: 100%;
+}
+
+.gallery-image-wrapper:first-child {
+  grid-area: hero-image;
+  width: 100%;
+  height: 100%;
+}
+
+.gallery-image-wrapper.info-image-wrapper {
+  grid-area: hero-info;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: sans-serif;
+  padding: 30px;
+}
+
+.gallery-image-wrapper.info-image-wrapper > img {
+  border-radius: 5px;
+  width: 60%;
+  margin-bottom: 30px;
+}
+
+.gallery-image-wrapper:nth-child(6n) {
+  grid-row-end: span 2;
+  grid-column-start: span 2;
+  width: 100%;
+  height: 100%;
+}
+
+/* ------------- MEDIA QUERIES ------------- */
+
+@media screen and (max-width: 950px) {
+  .gallery-image-wrapper:first-child {
+    grid-area: unset;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'hero-info hero-info';
+    gap: 10px;
+  }
+
+  .gallery-image-wrapper.info-image-wrapper {
+    grid-row-start: 1;
+    width: unset;
+    height: 100%;
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .gallery-image-wrapper.info-image-wrapper > img {
+    width: 150px;
+    margin-bottom: 0;
+    margin-right: 30px;
+  }
+
+  .gallery-image-wrapper:nth-child(6n) {
+    grid-row-end: unset;
+    grid-column-start: unset;
+    width: unset;
+    height: unset;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .gallery-image-wrapper.info-image-wrapper {
+    display: none;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+    grid-template-areas: unset;
+    gap: 10px;
+  }
+}

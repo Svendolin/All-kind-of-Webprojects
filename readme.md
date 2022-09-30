@@ -10,30 +10,33 @@
 
 <img align="center" alt="Canvas Picture" src="https://miro.medium.com/max/860/1*M-7PkS5EnTOQIuAmfRKH6Q.png" /> <br>
 
-Over here you're going to find all kind of webrpojects such as the small ones and the big ones. <br> These are an ideal opportunity to improve the coding skills for me a bit. Enjoy!
+Over here you're going to find all kind of webrpojects such as the small ones and the big ones done with HTML / CSS and JS! <br> These are an ideal opportunity to improve the coding skills for me a bit. Enjoy!
         
 <br />
 <br />
 
 ***
-## Technologies and Installation ✅
+<img align="left" alt="W3Schools Logo" width="35px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/W3Schools_logo.svg/2175px-W3Schools_logo.svg.png" />
+
+## &nbsp;Games and Fun to learn for free: ✅💫
 ***
 
-FOO FAS BAZ:
-* 1...2...3
+* Be sure to check out these funny games to learn HTML, CSS and JS: https://codepip.com/games/ (membership for pro)
 
+* Still some of the best tutorials for beginners: https://www.w3schools.com/ (sign up for tracked courses)
 
 <br />
 <br />
 
 ***
-<img align="left" alt="JavaScript" width="35px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/terminal/terminal.png" /> 
+<img align="left" alt="Projects" width="35px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/MS_Project_Logo.png/480px-MS_Project_Logo.png" /> 
 
-## &nbsp;How to START: ✅ (Create a repo and initialize it in git)
+## &nbsp;Our Projects: ✅ 
 ***
 | PROJECT | TITLE | CONTENT |
 |:--------------| :--------------| :--------------|
 |01| BIRTHDAY CARD | Animated Birthday Card for a friend (HTML, CSS) |
+|02| RESPONSIVENESS | All about resonsive topics such as flexbox, grid, media queries, tables, navigations and sliders (HTML,CSS) |
 
 
 <br />

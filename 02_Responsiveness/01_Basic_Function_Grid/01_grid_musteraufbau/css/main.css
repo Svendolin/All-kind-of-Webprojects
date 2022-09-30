@@ -1,0 +1,144 @@
+
+/* ----------------------------------- SMALL RESET ----------------------------------- */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: white;
+}
+
+/* ----------------------------------- BODY ----------------------------------- */
+
+body {
+  background-color: #304ffe;
+}
+
+/* ----------------------------------- BODY FÜR POSITIONING ------------------------------------ */
+
+.gallery-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 60px;                          /* Rundherum etwas Innenabstand */
+  background-color: #304ffe;
+}
+
+/* ----------------------------------- SCHRIFTANPASSUNGEN ------------------------------------ */
+
+h1 {
+  margin-bottom: 30px;
+}
+
+/* ----------------------------------- GRID BOX ------------------------------------ */
+
+.gallery {
+  background-color: black;
+  width: 80%;                            /* Verhältnis immer 10% body 80% Fläche 10% body wenn...  */                                                          
+  max-width: 850px;                      /* ...maximal 850px breit oder kleiner. Grösser, breiter = Verhältnis tritt ausser Kraft */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+    "hero-image hero-image image-info"
+    "hero-image hero-image image-info"
+    "image image image"; 
+  align-items: center;
+  justify-items: center;
+  column-gap: 10px;
+  row-gap: 10px;
+  grid-auto-rows: 1fr;                    /* Bewirkt das automatische Nachladen */ 
+}
+
+
+/* ----------------------------------- GELBE BOX "image" ------------------------------------ */
+
+
+.image-wrapper {
+  width: 100%;
+  height: 250px;                        /* 250px sind genau 1fr, da die grid width 850px (3fr Breite) ist */
+  background-color: yellow;
+  /* grid-area: image; */               /* Ausgeschaltet, da sonst die Wiederholfunktion nicht funktionieren würde */
+}
+
+/* ----------------------------------- ROTE BOX "hero-image" ------------------------------------ */
+
+
+.image-wrapper:first-child {
+  background-color: red;
+  grid-area: hero-image;                /* Überspannt 4 Flächen */
+  height: 100%;
+}
+
+
+/* ----------------------------------- SUB GRID TEST ------------------------------------ */
+
+
+/* .sub-grid-example {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.sub-grid {
+  background-color: brown;
+  width: 100%;
+  height: 100%;
+} */
+
+
+/* ----------------------------------- GRÜNE BOX "image-info" ------------------------------------ */
+
+
+.image-info {
+  grid-area: image-info;                /* TODO Überspannt 2 Flächen */
+  height: 100%;
+  background-color: green;
+}
+
+/* ----------------------------------- WEISSE BOX "Sechstes Glied" ------------------------------------ */
+
+
+.image-wrapper:nth-child(6n) {
+  background-color: white;
+  height: 100%;
+  grid-column-end: span 2;              /* Überspannt 2 Flächen */
+  grid-row-end: span 2;                 /* Überspannt 2 Flächen */
+}
+
+/* --------------------------------- <<<<< MEDIA QUERY 960px >>>>> ---------------------------------- */
+
+
+@media screen and (max-width: 960px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);      /* Gridsystem auf 2x 1fr beschränkt */
+    grid-template-areas:                        /* Grüne Box, image-info, nimmt Platz ein */
+      "image-info image-info";
+  }
+
+  .image-wrapper:first-child {          /* Rote Box, unset bewirkt, dass die grid-template funktion ausser Kraft gesetzt wird */
+    grid-area: unset;
+  }
+
+  .image-wrapper:nth-child(6n) {        /* Weisse Box, Abstände werden durch UNSET ausser Kraft grbracht */
+    background-color: white;
+    height: 250px;
+    grid-column-end: unset;
+    grid-row-end: unset;
+  }
+}
+
+/* --------------------------------- <<<<< MEDIA QUERY 590px >>>>> ---------------------------------- */
+
+
+@media screen and (max-width: 590px) {
+  .image-info {
+    display: none;                  /* Bewirkt, dass grüne Box "image-info" nicht mehr angezeigt wird */
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;     /* Bewirkt, dass die ganze gallery nur noch "einspaltig" geführt wird */
+  }
+}

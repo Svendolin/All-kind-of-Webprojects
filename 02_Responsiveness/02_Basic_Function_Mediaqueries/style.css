@@ -1,0 +1,88 @@
+/* === Small CSS Reset === */
+ 
+ *{
+   margin: 0;
+   padding: 0;
+
+ }
+
+ *, *::after, *::before{
+   box-sizing: border-box;
+ }
+  
+  /* CSS is reading from top to bottom. The effect wont work if the origin body selector is below the media query */
+  body {
+    background-color: red;
+    color: black;
+  }
+
+  h1 {
+      font-size: 150px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+  }
+
+  .bar {
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+  }
+
+  .foo {
+    font-size: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: white;
+  }
+
+  .fas {
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    display: none;
+
+  }
+
+  img {
+    width: 500px;
+  }
+
+  
+  /* On screens that are 1100px wide or less, the background color is blue */
+  /* screen, speech, print or all - screen as well as print are very common in use */
+  @media screen and (max-width: 1100px) {
+    body {
+      background-color: blue;
+      color: white;
+    }
+    
+    .foo {
+      display: none;
+    }
+
+    
+  }
+  
+  /* On screens that are 900px wide or less, the background color is green */
+  @media screen and (max-width: 790px) {
+    body {
+      background-color: green;
+      color: white;
+    }
+
+    .foo {
+      font-size: 30px;
+      /* display:none is not necessary anymore, due to the fact that the screen reader is reading from top to bottom
+        furthermore it has been used above already */
+    }
+
+    .fas {
+      display: flex;
+      justify-content: center;
+      font-size: 30px;
+    }
+
+    img {
+      width: 60%;
+    }
+  }
