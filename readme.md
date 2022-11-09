@@ -37,7 +37,20 @@ Over here you're going to find all kind of webrpojects such as the small ones an
 |:--------------| :--------------| :--------------|
 |01| BIRTHDAY CARD | Animated Birthday Card for a friend (HTML, CSS) |
 |02| RESPONSIVENESS | All about resonsive topics such as flexbox, grid, media queries, tables, navigations and sliders (HTML,CSS) |
+|03| SCSS / SASS Onepager | A small onepager website to test the basic structures of SCSS / SASS |
 
+
+<br />
+<br />
+
+***
+<img align="left" alt="Sass Logo" width="35px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/2560px-Sass_Logo_Color.svg.png" /> 
+
+## &nbsp;SCSS / SASS: ✅ 
+***
+**Some Notes about SASS / SCSS:**
+* SASS is a CSS preprocessor, which means that it extends the CSS language, adding features that allow variables, nested rules, mixins, inline imports, and more. It also helps to keep things organised and allows you to create style sheets faster.
+* SASS is completely compatible with all versions of CSS but needs to be compiled into CSS before it can be used in a browser.
 
 <br />
 <br />
