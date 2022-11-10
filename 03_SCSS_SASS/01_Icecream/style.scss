@@ -1,0 +1,68 @@
+@font-face {
+  font-family: 'Pacifico';
+  src: url("assets/Pacifico-Regular.ttf");
+}
+
+$main-color: #f15025;
+
+body {
+  background-color: #F5B1c2;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 64px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+}
+
+li a {
+  display: block;
+  width: 60px;
+  text-decoration: none;
+  color: white;
+}
+
+h1 {
+  color: $main-color;
+  font-family: 'Pacifico';
+  text-align: center;
+}
+
+/* Mixins: properties we need more often. In this case in .icecream and .circle */
+@mixin rightCorner() {
+  position: absolute;
+  bottom: 0;
+  right: 35vw;
+}
+
+/* Mixins: Are also perfect do declare variables. In this case we declare how to make a circle */
+/* $size = is in that case a mandatory variable while...
+   $bgColor = is a optional variable with a default value and needs to be written at the end of a mixin () */
+@mixin circle($size, $bgColor: #ff8a98) {
+  width: $size;
+  height: $size;
+  background-color: $bgColor;
+  border-radius: 50%;
+}
+
+.icecream {
+  height: auto;
+  max-width: 400px;
+  width: 100%;
+  @include rightCorner();
+}
+
+.circle {
+  @include rightCorner();
+  @include circle(600px); // $size = 600px, as you can see in the mixin
+}
+
+.main-text {
+  
+}
