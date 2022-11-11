@@ -1,12 +1,26 @@
+// ------------------------------------
+// Embedded Fonts and Variables
+// ------------------------------------
+
 @font-face {
   font-family: 'Pacifico';
   src: url("assets/Pacifico-Regular.ttf");
 }
 
+@font-face {
+  font-family: 'Fredoka';
+  src: url("assets/Fredoka.ttf");
+}
+
 $main-color: #f15025;
+
+// ------------------------------------
+// Tags + Basic Elements
+// ------------------------------------
 
 body {
   background-color: #F5B1c2;
+  font-family: 'Fredoka';
 }
 
 header {
@@ -28,11 +42,19 @@ li a {
   color: white;
 }
 
+a {
+  margin-left: 32px;
+}
+
 h1 {
   color: $main-color;
   font-family: 'Pacifico';
   text-align: center;
 }
+
+// ------------------------------------
+// Mixins
+// ------------------------------------
 
 /* Mixins: properties we need more often. In this case in .icecream and .circle */
 @mixin rightCorner() {
@@ -51,6 +73,27 @@ h1 {
   border-radius: 50%;
 }
 
+// ------------------------------------
+// Classes + IDs
+// ------------------------------------
+
+.button {
+  background-color: white;
+  color: black;
+  margin-top: 50px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  font-family: inherit;  // inherit the font-family from the parent element (body)
+}
+
+.button-main {
+  @extend .button; // extend the .button class (Additionally receive all basic values from .button)
+  background-color: $main-color;
+  margin-right: 10px;
+}
+
 .icecream {
   height: auto;
   max-width: 400px;
@@ -64,5 +107,15 @@ h1 {
 }
 
 .main-text {
-  
+  color: white;
+  position: absolute;
+  top: 25vh;
+  left: 64px;
+  font-size: 40px;
+  text-transform: uppercase;
 }
+
+.main-color {
+  color: $main-color;
+}
+

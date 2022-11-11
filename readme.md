@@ -38,7 +38,7 @@ Over here you're going to find all kind of webrpojects such as the small ones an
 |:--------------| :--------------| :--------------|
 |01| BIRTHDAY CARD | Animated Birthday Card for a friend (HTML, CSS) |
 |02| RESPONSIVENESS | All about resonsive topics such as flexbox, grid, media queries, tables, navigations and sliders (HTML,CSS) |
-|03| SCSS / SASS | A small onepager website to test the basic structures of SCSS / SASS (seen on YT) |
+|03| SCSS / SASS | A small onepager website to test the basic structures of SCSS / SASS, Mixins, Extend; Nesting, Devide and Conquer |
 
 
 <br />
@@ -52,7 +52,6 @@ Over here you're going to find all kind of webrpojects such as the small ones an
 **Some Notes about SASS / SCSS:**
 * SASS is a CSS preprocessor, which means that it extends the CSS language, adding features that allow variables, nested rules, mixins (*), inline imports, and more. It also helps to keep things organised and allows you to create style sheets faster.
 * SASS is completely compatible with all versions of CSS but needs to be compiled into CSS before it can be used in a browser.
-* (*) Mixins are a way to reuse styles. They are similar to functions in that they take arguments and return a value. They are different in that they are not limited to returning a single value. They can also output multiple lines of CSS.
 
 **What's the difference between SASS and SCSS?**
 * SCSS still uses {} like:
@@ -72,6 +71,48 @@ h1
   color: $main-color;
 
 ```
+
+**MIXINS:**
+* Mixins are a way to reuse styles. They are similar to functions in that they take arguments and return a value. They are different in that they are not limited to returning a single value. They can also output multiple lines of CSS.
+
+```scss
+// Mixin example 1 without arguments
+@mixin rightCorner() {
+  position: absolute;
+  bottom: 0;
+  right: 35vw;
+}
+
+// Mixin example 2 with arguments
+@mixin circle($size, $bgColor: #ff8a98) {
+  width: $size;
+  height: $size;
+  background-color: $bgColor;
+  border-radius: 50%;
+}
+
+// Class which uses the mixin 1 and 2
+.circle {
+  @include rightCorner();
+  @include circle(600px); // $size = 600px. Order is crucial!
+}
+```
+
+**EXTEND:**
+* Extend is a way to share a set of CSS properties from one selector / classes to another. It helps keep your Sass / Scss very DRY.
+
+```scss
+
+.button-main {
+  @extend .button; // extend the .button class (Additionally receive all basic values from .button)
+  background-color: $main-color;
+  margin-right: 10px;
+}
+
+```
+
+
+
 
 **How to start:**
 1) Go to Extensions in VSC and search for "Live Sass Compiler" and install it (optionally as well as SASS Syntax Highlighting)

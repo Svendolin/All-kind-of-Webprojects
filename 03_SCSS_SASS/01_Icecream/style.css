@@ -2,8 +2,13 @@
   font-family: "Pacifico";
   src: url("assets/Pacifico-Regular.ttf");
 }
+@font-face {
+  font-family: "Fredoka";
+  src: url("assets/Fredoka.ttf");
+}
 body {
   background-color: #F5B1c2;
+  font-family: "Fredoka";
 }
 
 header {
@@ -25,6 +30,10 @@ li a {
   color: white;
 }
 
+a {
+  margin-left: 32px;
+}
+
 h1 {
   color: #f15025;
   font-family: "Pacifico";
@@ -35,6 +44,22 @@ h1 {
 /* Mixins: Are also perfect do declare variables. In this case we declare how to make a circle */
 /* $size = is in that case a mandatory variable while...
    $bgColor = is a optional variable with a default value and needs to be written at the end of a mixin () */
+.button, .button-main {
+  background-color: white;
+  color: black;
+  margin-top: 50px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  font-family: inherit;
+}
+
+.button-main {
+  background-color: #f15025;
+  margin-right: 10px;
+}
+
 .icecream {
   height: auto;
   max-width: 400px;
@@ -52,4 +77,17 @@ h1 {
   height: 600px;
   background-color: #ff8a98;
   border-radius: 50%;
+}
+
+.main-text {
+  color: white;
+  position: absolute;
+  top: 25vh;
+  left: 64px;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.main-color {
+  color: #f15025;
 }/*# sourceMappingURL=style.css.map */
