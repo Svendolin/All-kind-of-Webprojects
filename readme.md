@@ -53,6 +53,15 @@ Over here you're going to find all kind of webrpojects such as the small ones an
 * SASS is a CSS preprocessor, which means that it extends the CSS language, adding features that allow variables, nested rules, mixins (*), inline imports, and more. It also helps to keep things organised and allows you to create style sheets faster.
 * SASS is completely compatible with all versions of CSS but needs to be compiled into CSS before it can be used in a browser.
 
+**How to start:**
+1) Go to Extensions in VSC and search for "Live Sass Compiler" and install it (optionally as well as SASS Syntax Highlighting)
+2) Create a new file with the extension .scss (like style.scss)
+2) Then go to the bottom right corner and click on "Watch Sass" and you're good to go (generates a .map file as well which has a function to map the compiled CSS to the source code) -> You will receive two more files: style.css and style.css.map
+
+**How to continue:**
+
+* SCSS is "super" and stronger than CSS, which means all the changes you make in like "style.SCSS" will be compiled into "style.CSS" and will be applied to your website. It does everything automatically for you.
+
 **What's the difference between SASS and SCSS?**
 * SCSS still uses {} like:
 ```scss
@@ -72,7 +81,7 @@ h1
 
 ```
 
-**MIXINS:**
+**1) MIXINS:**
 * Mixins are a way to reuse styles. They are similar to functions in that they take arguments and return a value. They are different in that they are not limited to returning a single value. They can also output multiple lines of CSS.
 
 ```scss
@@ -98,7 +107,7 @@ h1
 }
 ```
 
-**EXTEND:**
+**2) EXTEND:**
 * Extend is a way to share a set of CSS properties from one selector / classes to another. It helps keep your Sass / Scss very DRY.
 
 ```scss
@@ -107,22 +116,43 @@ h1
   @extend .button; // extend the .button class (Additionally receive all basic values from .button)
   background-color: $main-color;
   margin-right: 10px;
+  color: white;
 }
+
+```
+
+**3) NESTING:**
+* Nesting with & is a way to write CSS more efficiently. It allows you to nest your CSS selectors in a way that follows the same visual hierarchy of your HTML. It helps keep the DRY principle.
+
+```scss
+
+li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  // Nesting: With the & symbol, we can nest the pseudo-class inside the selector
+  &:hover {
+    color: $main-color;
+  }  
+}
+```
+**4) DIVIDE AND CONQUER:**
+* Divide and Conquer is a way to split your CSS into multiple files. It helps keep your code DRY and organised.
+
+```scss
+// 1) Create new folder and name it "scss" (or whatever you want)
+// 2) Create a new file like fonts.scss and add some code (there will be a .css and .css.map generated as well)
+// 3) Go to your main file (style.scss) and import the new file like:
+@import "scss/company-colors";
+@import "scss/fonts";
+// 4) To see live-server changes just save the main style.css file and the changes will be applied to your website
 
 ```
 
 
 
 
-**How to start:**
-1) Go to Extensions in VSC and search for "Live Sass Compiler" and install it (optionally as well as SASS Syntax Highlighting)
-  1.1) create a css folder and a scss folder with the same name + link your css file to your html file
-2) Create a new folder and name it "scss" (or whatever you want)
-2) Then go to the bottom right corner and click on "Watch Sass" and you're good to go (generates a .map file as well which has a function to map the compiled CSS to the source code)
 
-**How to continue:**
-
-* SCSS is "super" and stronger than CSS, which means all the changes you make in like "style.SCSS" will be compiled into "style.CSS" and will be applied to your website. It does everything automatically for you.
 
 <br />
 <br />
