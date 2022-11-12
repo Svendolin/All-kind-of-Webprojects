@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Responsive Navbar using HTML, CSS and JAVASCRIPT</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="scss/media.css" />
     <!-- 
-    - Remix Icon is a set of open-source neutral-style system symbols
+    - (A) Remix Icon is a set of open-source neutral-style system symbols
     - https://github.com/Remix-Design/RemixIcon
    -->
     <link
@@ -15,7 +16,7 @@
       rel="stylesheet"
     />
     <!-- 
-    - High Quality Web Icons with usage as a font
+    - (B) High Quality Web Icons with usage as a font and also some effects
     - https://github.com/atisawd/boxicons
    -->
     <link
@@ -31,32 +32,41 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap"
       rel="stylesheet"
     />
-    <script src="js/code.js"></script>
-  </head>
+
+    <!-- 
+    To solve the "Cannot set property 'onclick' of null" error, place the JS script tag 
+    at the bottom of the body tag. The script should run after the DOM elements have been 
+    declared OR use the defer attribute in the script tag.
+  --></head>
   <body>
     <!-- Header with the Navigation -->
     <header>
-      <a href="" class="logo"><i class="ri-home-heart-fill"></i><span>Logo</span></a> <!-- From remixicon.com -->
+      <!-- (A) -->
+      <a href="" class="logo"
+        ><i class="ri-home-heart-fill"></i><span>Logo</span></a
+      >
+      <!-- From remixicon.com -->
+      <!-- Navbar Section -->
       <!-- Emmet Shortcut: ul.navbar>li*4>a -->
       <ul class="navbar">
         <li><a href="#" class="active">Home</a></li>
+        <!-- active class is used to highlight the current page -->
         <li><a href="#">About Us</a></li>
         <li><a href="#">Services</a></li>
         <li><a href="#">Blog</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
 
-      <!-- Main Section with -->
+      <!-- Main Section with Sign in and Register -->
       <div class="main">
         <a href="#" class="user"><i class="ri-user-fill"></i>Sign in</a>
         <a href="#">Resister Now</a>
+        <!-- (B) -->
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <!-- bx bx-menu bx-flashing = animation -->
       </div>
-   
-   
     </header>
 
-
-    
-
+    <script src="js/code.js"></script>
   </body>
 </html>

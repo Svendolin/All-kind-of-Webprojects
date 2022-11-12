@@ -1,0 +1,49 @@
+@import "colors"; // Importing colors.scss
+
+
+// Media queries
+@media (max-width: 1300px) {
+  header {
+    padding: 14px 2%;
+    transition: .2s;
+  }
+  .navbar a {
+    padding: 5px 0;
+    margin: 0px 20px;
+  }
+}
+
+@media (max-width: 1090px) {
+  #menu-icon { // Hamburger menu should appear at 1090px
+    display: block;
+  }
+  .navbar {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    width: 270px;
+    height: 29vh;
+    background: $main-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; // due to the flex-direction: column it will be in the top on Y-axis
+    border-radius: 10px;
+    transition: all .50s ease;
+  }
+  .navbar a {
+    display: block;
+    margin: 12px 0;
+    padding: 0 25px;
+    transition: all .50s ease;
+  }
+  .navbar a:hover {
+    color: $bg-color;
+    transform: translateY(5px);
+  }
+  .navbar a.active {
+    color: $text-color;
+  }
+  .navbar.open {
+    right: 2%;
+  }
+}
