@@ -1,0 +1,17 @@
+@import"scss/colors";
+
+
+/* === Small CSS Reset === */
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+*, *::after, *::before{
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
