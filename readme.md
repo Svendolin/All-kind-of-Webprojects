@@ -39,6 +39,8 @@ Over here you're going to find all kind of webrpojects such as the small ones an
 |01| BIRTHDAY CARD | Animated Birthday Card for a friend (HTML, CSS) |
 |02| RESPONSIVENESS | All about resonsive topics such as flexbox, grid, media queries, tables, navigations and sliders (HTML,CSS) |
 |03| SCSS / SASS | A small onepager website to test the basic structures of SCSS / SASS, Mixins, Extend; Nesting, Devide and Conquer |
+|04| Navigation| A primary example of a responsive navigation bar with a hamburger menu (HTML, SCSS, JS) |
+|05| Bootstrap| The very basics of using Bootstrap |
 
 
 <br />
@@ -153,9 +155,16 @@ li a {
 
 SASS / SCSS Documentation: https://sass-lang.com/documentation
 
+<br />
+<br />
 
+***
+<img align="left" alt="Bootstrap Logo" width="35px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/512px-Bootstrap_logo.svg.png" /> 
 
-
+## &nbsp;BOOTSTRAP: ✅ 
+***
+**Some Notes about Bootstrap:**
+* Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains CSS- and (optionally) JavaScript-based design templates for typography, forms, buttons, navigation and other interface components.
 
 
 <br />
