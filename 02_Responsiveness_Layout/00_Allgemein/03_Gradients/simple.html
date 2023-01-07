@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Simple Gradients</title>
+  <style> 
+  
+  .box{
+    margin: 2em;
+    border: solid 1px black;
+    width: 300px;
+    height: 200px;
+  }
+
+  .grad1{
+    background-image: linear-gradient(red, blue);
+  }
+  .grad2{
+    background-image: linear-gradient(to left, rgb(65, 32, 32), #ff3399);
+  }
+  .grad3{
+    background-image: linear-gradient(red , blue , red);
+  }
+  .grad4{
+    background-image: linear-gradient(red 33%,blue 33%, blue 66%, red 66%);
+  }
+
+  
+  </style>
+</head>
+<body>
+  <div class="grad1 box"></div>
+  <div class="grad2 box"></div>
+  <div class="grad3 box"></div>
+  <div class="grad4 box"></div>
+</body>
+</html>

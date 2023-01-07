@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Test your knowledge</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <header>
+    <h1>Selectors</h1>
+    <p>This page will test how much you know about CSS selectors.<br> You are NOT allowed to change the HTML (add/ remove classes, ids or elements) </p>
+  </header>
+  <section class="selectors">
+    <!-- Only change the elements in this section, other elements in the website should not be affected by your changes.-->
+    <hr>
+    <!-- PART ONE START-->
+
+    <!-- Make the fist letters of each word in this <h1> uppercase -->
+
+    <!-- Change the text color of the following <p> elements -->
+    <!-- First <p> has to be orange -->
+    <!-- Second <p> has to be yellow -->
+    <!-- First <p> has to be violet -->
+    <h1>some title</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum veniam iure mollitia suscipit, cum ab?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores deserunt cum ad non libero laudantium.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit quis aut obcaecati inventore mollitia deleniti.</p>
+
+    <!-- PART ONE END-->
+    <hr>
+    <!-- PART TWO START-->
+
+    <!-- This is an unordered list which contains an unordered list which contains an unordered list -->
+    <!-- The items in the upper most <ul> need an orange text color. -->
+    <!-- The items in the second <ul> need a lime text color -->
+    <!-- The items in the third (inner-most layer) ul need a gold text color -->
+      <ul>
+      <li>
+        More Items
+        <ul>
+          <li>Item</li>
+          <li>More Items
+            <ul>
+              <li>Item</li>
+              <li>Item</li>
+              <li>Item</li>
+            </ul>
+          </li>
+          <li>Item</li>
+        </ul>
+      </li>
+      <li>Item</li>
+      <li>Item</li>
+    </ul>
+    
+
+    
+    <!-- PART TWO END-->
+    <hr>
+    <!-- PART THREE START-->
+
+    <!-- The table needs the following styles: -->
+    <!-- table headers: Orange, sans-serif -->
+    <!-- Every other table row (starting after the row with the headers): background color of black  -->
+    <!-- The column in the middle with the numbers: color: lime, font family of monospace-->
+  
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Hobby</th>
+      </tr>
+      <tr>
+        <td>Lisa</td>
+        <td>22</td>
+        <td>Tennis</td>
+      </tr>
+      <tr>
+        <td>Jessica</td>
+        <td>43</td>
+        <td>Golf</td>
+      </tr>
+      <tr>
+        <td>Simon</td>
+        <td>53</td>
+        <td>Climbing</td>
+      </tr>
+      <tr>
+        <td>Tobias</td>
+        <td>19</td>
+        <td>Cars</td>
+      </tr>
+      <tr>
+        <td>Natacha</td>
+        <td>32</td>
+        <td>Swiming</td>
+      </tr>
+    </table>
+
+    <!-- PART THREE END-->
+    <hr> 
+    <!-- PART FOUR START-->
+    <!-- !!! Without using :nth-child() !!! -->
+    <!-- All boxes before boxy need to be orange -->
+    <!-- All boxes after boxy need to be lime-->
+    <!-- The box directly after boxy needs to be yellow-->
+    <div class="box-wrapper">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div id="boxy" class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+  
+    <!-- PART FOUR END-->
+    <hr>
+  </section>
+  <footer>
+    <small>Nothing to see here :)</small>
+  </footer>
+</body>
+</html>

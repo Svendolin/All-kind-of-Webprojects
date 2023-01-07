@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Form</title>
+  <style> 
+  /* === Small CSS Reset === */
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  *, *::after, *::before{
+    box-sizing: border-box;
+  }
+
+  body {
+    background: #222;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+
+  form {
+    background: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+   form h1 {
+     margin-bottom: 1rem;
+   }
+  .gender_box{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 1rem 0;
+  }
+  
+
+  form > input {
+    width: 100%;
+    padding: 0.2rem;
+    margin-bottom: 1rem;
+  }
+
+  form > textarea { 
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  form input[type="submit"]{
+    font-family: monospace;
+  }
+  </style>
+</head>
+<body>
+
+
+  <form>
+    <h1>Contact Form</h1>
+    <label for="gender">Specify Your Gender</label>
+    <div class="gender_box" id="gender">
+      <input type="radio" name="gender" id="female" value="female"><label for="female">Female</label>
+      <input type="radio" name="gender" id="male" value="male"><label for="male">Male</label>
+      <input type="radio" name="gender" id="other" value="other"><label for="other">Other</label>
+    </div>
+
+    <label for="first_name">First Name *</label>
+    <input type="text" name="first_name" id="first_name" placeholder="Write your first name here!" required>
+
+    <label for="last_name">Last Name</label>
+    <input type="text" name="last_name" id="last_name">
+
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email">
+
+    <label for="message">Message</label>
+    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+    <input type="submit" value="Send">
+    <p>* (required fields)</p>
+  </form>
+</body>
+</html>

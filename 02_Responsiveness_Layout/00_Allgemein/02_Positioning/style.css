@@ -1,0 +1,55 @@
+/* === Small CSS Reset === */
+*{
+  margin: 0;
+  padding: 0;
+}
+*, *::after, *::before{
+  box-sizing: border-box;
+}
+
+body {
+  background: #222;
+}
+
+.container {
+  margin: 4rem auto;
+  width: 800px;
+  height: 800px;
+  border: solid 1px black;
+  background: #555;
+  position: relative;
+}
+
+.box {
+  height: 100px;
+  width: 100px;
+}
+
+.static {
+  border: solid 1px lime;
+  background: rgb(82, 255, 82);
+}
+
+.relative {
+  border: solid 1px hotpink;
+  background: rgb(255, 138, 197);
+  position: relative;
+  left: 100px;
+  z-index: 1;
+}
+
+.absolute {
+  border: solid 1px rgb(255, 105, 105);
+  background: rgb(255, 138, 138);
+  position: absolute;
+  top: 100px;
+  left: 150px;
+}
+
+.fixed {
+  border: solid 1px rgb(60, 38, 187);
+  background: rgb(138, 159, 255);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}

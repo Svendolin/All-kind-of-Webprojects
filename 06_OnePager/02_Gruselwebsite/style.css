@@ -1,0 +1,441 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
+
+/* Variables */
+:root{
+  --pri-color: #000;
+  --sec-color: #ff4069;
+  --ter-color: #ffd171;
+  --ter-dark-color: #fda742;
+  --qua-color: #fff;
+  --font-main: 'Indie Flower', cursive;
+}
+
+
+/* === Small CSS Reset === */
+*{
+  margin: 0;
+  padding: 0;
+}
+
+*, *::after, *::before{
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body{
+  background: var(--pri-color);
+  font-family: var(--font-main);
+
+}
+
+h1{
+  font-size: 3em;
+  color: var(--sec-color);
+}
+h2{
+  font-size: 2.5em;
+  color: var(--sec-color);
+}
+h3{
+  font-size: 2em;
+  color: var(--sec-color);
+}
+/* === Navigation === */
+
+nav{
+  padding: 1em;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav .logo-container{
+  height: 6em;
+  width: auto;
+}
+
+.logo-container img{
+  height: 6em;
+  width: auto;
+  margin-left: 2em;
+}
+
+nav ul{
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+nav ul li{
+  list-style: none;
+  padding: 0 2em;
+}
+
+nav ul li > a{
+  text-decoration: none;
+  color: var(--sec-color);
+  font-family: var(--font-main);
+  font-size: 1.5em;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* === Header === */
+
+header{
+  position: relative;
+  margin: 0em 0 3em 0;
+  width: 100%;
+  min-height: 40em;
+  background: url('images/background.jpg');
+  background-size: cover;
+  background-position: center center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 2em;
+  -webkit-box-shadow: -8em -8px var(--sec-color), 8em 4px var(--sec-color);
+          box-shadow: -8em -8px var(--sec-color), 8em 4px var(--sec-color);
+}
+
+header .highlight{
+  color: var(--ter-dark-color);
+}
+
+header h1, header h2{
+  color: var(--qua-color) ;
+}
+
+header .headerContent{
+  background: var(--sec-color);
+  padding: 2em;
+  -webkit-box-shadow: 7px 5px black, -4px -2px black, 7px -5px black, -4px 5px black;
+          box-shadow: 7px 5px black, -4px -2px black, 7px -5px black, -4px 5px black;
+}
+
+/* === Section: About === */
+
+section#about{
+  width: 100%;
+  margin: 6em 0;
+}
+
+section#about > h2{
+  margin: 1em 0;
+  text-align: center;
+}
+
+section#about .projects{
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.projects > .project{
+  position: relative;
+  width: 33%;
+  margin: 0 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: var(--qua-color);
+  -webkit-box-shadow: 8px 8px var(--sec-color), -4px -4px var(--sec-color), 8px -4px var(--sec-color), -4px 8px var(--sec-color);
+          box-shadow: 8px 8px var(--sec-color), -4px -4px var(--sec-color), 8px -4px var(--sec-color), -4px 8px var(--sec-color);
+}
+
+.projects > .project ul{
+  margin: 0 0 0 2em;
+  font-size: 1.3em;
+  color: var(--sec-color);
+  width: 12em;
+  background: black;
+  padding: 1em 2em;
+  border: solid 2px var(--sec-color);
+  position: relative;
+}
+
+.projects > .project h3:not(.caption){
+  margin: 1em;
+  font-size: 1.6em;
+  text-align: right;
+}
+
+.projects > .project h3:not(.caption) span{
+  border: solid 2px var(--sec-color);
+  padding: 0.3em;
+  background: black;
+}
+
+.caption{
+  text-align: center;
+  width: 100%;
+  padding: 1.5em 2em;
+  font-size: 3em;
+  text-align: center;
+  color: var(--ter-color);
+  text-shadow: #ff4069 2px 2px;
+}
+
+.project:nth-child(1){
+  background: url(images/alastorflipped.png);
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: var(--qua-color);
+}
+
+.project:nth-child(2){
+  background: url(images/angeldust.webp);
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: var(--qua-color);
+  -webkit-box-shadow: -8px -8px var(--sec-color), 4px 4px var(--sec-color), -8px 4px var(--sec-color), 4px -8px var(--sec-color);
+          box-shadow: -8px -8px var(--sec-color), 4px 4px var(--sec-color), -8px 4px var(--sec-color), 4px -8px var(--sec-color);
+}
+
+.project:nth-child(3){
+  background: url(images/charlie.png);
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: var(--qua-color);
+}
+
+.projects > .project img{
+  width: 100%;
+}
+
+.projects .cta-li{
+  list-style: none;
+}
+
+.projects .cta-li button:hover{
+  background: var(--sec-color);
+  -webkit-transition: background transform 0.5s;
+  transition: background transform 0.5s;
+  -webkit-transform: rotate(3deg);
+          transform: rotate(3deg);
+  cursor: pointer;
+}
+
+.projects .cta-li button{
+  padding: 0.2em 0.5em;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  font-family: var(--font-main);
+  font-size: 1.4em;
+  color: var(--pri-color);
+  -webkit-box-shadow: -4px -4px var(--sec-color), 2px 2px var(--sec-color), -4px 2px var(--sec-color), 2px -4px var(--sec-color);
+          box-shadow: -4px -4px var(--sec-color), 2px 2px var(--sec-color), -4px 2px var(--sec-color), 2px -4px var(--sec-color);
+  width: 100%;
+  right: -2em;
+  top: 1em;
+  border: none;
+  position: relative;
+  background: var(--ter-color);
+}
+
+/* === Section: Contact === */
+
+section#contact{
+  padding: 2em 0;
+  position: relative;
+  margin: 2em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: url(images/vaggie2_by_toughdoge.webp);
+  background-repeat: no-repeat;
+  background-position: left center;
+  -webkit-box-shadow: -8em -4px var(--sec-color), 8em 8px var(--sec-color);
+          box-shadow: -8em -4px var(--sec-color), 8em 8px var(--sec-color);
+}
+
+section#contact img{
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+section#contact form{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 30em;
+  padding: 2em;
+  color: var(--sec-color);
+}
+
+section#contact form > *{
+  margin: 0.3em 0;
+}
+
+section#contact input{
+  background: var(--ter-color);
+  border: none;
+  font-size: 1.4em;
+  padding: 0.3em;
+  font-family: var(--font-main);
+  position: relative;
+  display: block;
+  -webkit-box-shadow: -4px -4px var(--sec-color), 2px 2px var(--sec-color), -4px 2px var(--sec-color), 2px -4px var(--sec-color);
+          box-shadow: -4px -4px var(--sec-color), 2px 2px var(--sec-color), -4px 2px var(--sec-color), 2px -4px var(--sec-color);
+}
+
+section#contact input:nth-child(2), textarea{
+  -webkit-box-shadow: 4px 4px var(--sec-color), -2px -2px var(--sec-color), 4px -2px var(--sec-color), -2px 4px var(--sec-color);
+          box-shadow: 4px 4px var(--sec-color), -2px -2px var(--sec-color), 4px -2px var(--sec-color), -2px 4px var(--sec-color);
+}
+
+
+section#contact label{
+  font-size: 1.4em;
+}
+
+section#contact button{
+  padding: 0.5em 1em;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  font-family: var(--font-main);
+  font-size: 1.4em;
+  color: #ff4069;
+  -webkit-box-shadow: -4px -4px var(--sec-color), 2px 2px var(--sec-color), -4px 2px var(--sec-color), 2px -4px var(--sec-color);
+          box-shadow: -4px -4px var(--sec-color), 2px 2px var(--sec-color), -4px 2px var(--sec-color), 2px -4px var(--sec-color);
+  background: transparent;
+  border: none;
+}
+section#contact button:hover{
+  background: var(--ter-color);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: rotate(3deg);
+          transform: rotate(3deg);
+  cursor: pointer;
+}
+
+section#contact textarea{
+  background: var(--ter-color);
+  border: none;
+  font-size: 1.4em;
+  font-family: var(--font-main);
+  padding: 0.3em;
+}
+
+section#contact small{
+  color: var(--sec-color);
+}
+
+
+/* === Footer === */
+
+footer{
+  background: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2em 0;
+}
+
+footer small, footer a{
+  color: var(--sec-color);
+  text-decoration: none;
+}
+
+footer .jam{
+  font-size: 3em;
+  color: var(--sec-color);
+}
+
+
+@media screen and (max-width: 1150px){
+  .projects{
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .projects .project{
+    width: 34em;
+    margin: 2em 0;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .projects {
+    padding: 0 1em;
+  }
+  .projects .project{
+    width: 100%;
+    margin: 2em 0em;
+  }
+
+  section#contact{
+    background: none;
+  }
+
+  section#contact img{
+    display: none;
+  }
+}

@@ -1,0 +1,122 @@
+/* Normaler CSS Befehl:
+    Selektor {
+    Attribut / Eigenschaft (Property): Wert1 (Value);
+    Attribut2 (Property2): Wert2 (Value2);
+    etc;
+    } 
+
+    Es gilt:
+    "Gebe allen...bei der Eigenschaft...den Wert..." =
+    "Selektor...Attribut...Wert"
+    "Gebe allen TEXTEN bei der Eigenschaft HINTERGRUND den Wert ROT"
+    
+    Mögliche Attribute:
+    background: (Farbe)
+    font-size: (pt, px etc)
+    font-family: (z.B. Arial Black, sans-serif)
+    color: (Farbe)
+    text-decoration: (z.B. Underline)
+    text-align: (z.B. center)
+    margin-top: (z.B. 100px,Aussenabstand von oben)
+    margin: 0, auto (0 von oben und unten, links und rechts weden dann automatisch angepasst)
+    padding: (z.B. 10px, 30px = Innenabstand O/U, L/R), da 2 Werte. (1 Wert = Alle Seiten, 4 Werte = O/R/U/L)
+    box-shadow: (4 Seiten definieren un px) sowie Farbe
+    border: (z.B solid, Anz Px für Grösse, Farbe) für Umrahmung
+    border-radius: (z.B. 5px) für Abrundungen
+
+
+    Billige 1ste Variante:
+    Direkt in der HTML:
+    <body>
+        <h1 style="color: red; background: green">BLABLA</h1>
+
+    Billige 2te Variante:
+    Direkt in der HTML:
+    <head>
+      <style type="text/css">
+        h1 {
+          Attribut: Wert etc }
+      </style>
+    </head>
+
+    Übliche 3te Variante:
+    In der head der HTML:
+    <link rel="stylesheet" href=style.css"> Shortcut: link:css
+    Normaler CSS Befehl dann im Style.css Ordner
+
+    Selektoren mit Zuständen von Elementen:
+    button:hover {
+      color:
+      background:
+      }
+        
+    */
+
+/* Part 1 */
+
+h1{
+  text-transform: capitalize ;
+}
+
+.selectors > p:first-of-type {
+  color: orange;
+}
+
+.selectors > p:nth-of-type(2) {
+  color: yellow;
+}
+
+.selectors > p:last-of-type {
+  color: violet;
+}
+
+/* Part 2 */
+
+.selectors > ul {
+  color: orange;
+}
+
+.selectors > ul ul {
+  color: lime;
+}
+
+.selectors > ul ul ul {
+  color: gold;
+}
+
+/* Part 3 */
+
+.selectors th {
+  font-family: sans-serif;
+  color: orange;
+}
+
+.selectors tr:nth-child(even){
+  background: #333;
+  color: #fff;
+}
+
+.selectors tr td:nth-child(2){
+  color: lime;
+  font-family: monospace;
+}
+
+/* Part 4 */
+
+.box {
+  width: 50px;
+  height: 50px;
+  background: orange;
+}
+
+#boxy ~ .box {
+  background: lime;
+}
+
+#boxy + .box {
+  background: yellow;
+}
+
+#boxy {
+  background: transparent;
+}

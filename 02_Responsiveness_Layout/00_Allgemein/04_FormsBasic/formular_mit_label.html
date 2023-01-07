@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>CSS Formular</title>
+    <style>
+        * {
+            font-family: "Verdana";
+        }
+        /* ALLGEMEINE REGELN */
+        fieldset {
+            border: 1px solid green;
+            width: 380px;
+        }
+        
+        legend {
+            padding: 0.2em 0.5em;
+            border: 1px solid green;
+            color: green;
+            font-size: 90%;
+            text-align: right;
+        }
+        
+        label {
+            width: 170px;
+            display: inline-block;
+            text-align: right;
+            vertical-align: top;
+        }
+        
+        input {
+            margin-bottom: 20px;
+        }
+        
+        /* SPEZIFISCHE AUSKORREKTUREN */
+        label[for=female] {
+            width: 70px;
+        }
+        
+        label[for=vehicle2] {
+            width: 130px;
+        }
+        
+        label[for=mybrowser],
+        label[for=favauto],
+        label[for=picker] {
+            margin-top: -10px;
+        }
+        
+        input[name=quantity],
+        select[name=cars],
+        input[name=bday],
+        input[name=favcolor],
+        input[name=mytime],
+        input[name=favbrowser],
+        textarea {
+            width: 140px;
+        }
+        
+        input[type=submit] {
+            float: right;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            margin-left: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        input[type=submit]:hover {
+            background-color: #2fde36;
+        }
+        
+        input[type=reset] {
+            float: right;
+            background-color: #af4c4c;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        input[type=reset]:hover {
+            background-color: #f53232;
+        }
+    </style>
+</head>
+
+<body>
+    <form method="get" action="#" id="myform">
+        <fieldset>
+            <legend>HTML/CSS FORM</legend>
+            <!-- FORMULAR -->
+
+            <!-- Ein Label verbindet das Inputfeld über for/id - indem dort gleiche Werte drin sind
+            - gut für Screenreader, zusätzliche Klickfläche -->
+            <label for="vorname">Vorname:</label>
+            <input type="text" id="vorname" class="name" name="usr_vorname" placeholder="Dein Vorname" maxlength="20" required>
+
+            <label for="nachname">Nachname:</label>
+            <input type="text" class="name" id="nachname" name="usr_nachname" placeholder="Dein Nachname" required>
+
+            <label for="e_mail">E-Mail:</label>
+            <input type="email" class="name" id="e_mail" name="usr_e_mail" placeholder="Deine E-Mail">
+
+            <label for="passwort">Passwort:</label>
+            <input type="password" placeholder="Dein Passwort" id="passwort" name="usr_password" class="name">
+
+            <label for="telefon">Telefon:</label>
+            <input type="tel" class="name" id="telefon" name="usr_tel" placeholder="Deine Tel-Nummer">
+
+            <label for="webauftritt">Website:</label>
+            <input type="url" class="forty" id="webauftritt" name="usr_homepage" placeholder="Deine Website">
+
+            <!-- RADIOBUTTON: nur einer ist anwählbar 
+            Radiobutton: nur eine Radio-Element einer Gruppe kann angecheckt werden. Beim Radio-Button spielt das Attr. name eine wichtige Rolle: wenn identische Werte zugewiesen, z.B. gender, sind, dann gehören sie zusammen: -->
+            <label for="male">Männlich:</label>
+            <input type="radio" name="gender" value="male" id="male" class="gender" checked>
+
+            <label for="female">Weiblich:</label>
+            <input type="radio" name="gender" value="female" id="female" class="gender">
+
+           
+           
+            <!-- CHECKBOXEN -->
+            <label for="vehicle1">Besitze ein Velo</label>
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+
+            <label for="vehicle2">Besitze ein Auto</label>
+            <input type="checkbox" name="vehicle2" value="Car" id="vehicle2">
+
+           
+           
+            <label for="picker">Wie viele Unfälle hatten sie schon?</label>
+            <input id="picker" type="number" name="quantity" min="1" max="5">
+            
+            <label for="favauto">Welche Automarke finden Sie toll?</label>
+            <select name="cars" id="favauto">
+               
+               <!-- nota bene: Attribute multiple select möglich -->
+                <option value="">-- Bitte wählen --</option>
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="fiat">Fiat</option>
+                <option value="audi">Audi</option>
+            </select>
+            <br>
+            <br>
+            
+            
+            <!-- falls die neueren Werte für types - d.h. date, color, time, einige Browser immer so nicht verstehen, so gilt der default type="text":  -->
+        
+            <label for="geburtsdatum">Ihr Geburtsdatum: </label>
+            <input type="date" id="geburtsdatum" name="bday">
+            <br>
+
+            <label for="favcolor">Ihre Lieblingsfarbe: </label>
+            <input type="color" id="favcolor" name="favcolor">
+            <br>
+
+            <label for="favcolor">Wähle eine Zeit: </label>
+            <input type="time" name="mytime" id="favtime">
+
+            <label for="mybrowser">Wähle deinen Browser:</label>
+            <input list="browsers" id="mybrowser" name="favbrowser" placeholder="Fang an zu tippen">
+            <datalist id="browsers">
+                <option value="Internet Explorer">
+                <option value="Firefox">
+                <option value="Chrome">
+                <option value="Opera">
+                <option value="Safari">
+            </datalist>
+
+            <label for="kommentar">Dein Kommentar: </label>
+            <textarea id="kommentar" name="Kommentar" placeholder="Dein Kommentar "></textarea>
+
+            <input type="submit" value="Absenden">
+            <input type="reset" value="Zurücksetzen">
+
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
