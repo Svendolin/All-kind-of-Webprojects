@@ -41,6 +41,8 @@ Over here you're going to find all kind of webrpojects such as the small ones an
 |03| SCSS / SASS | A small onepager website to test the basic structures of SCSS / SASS, Mixins, Extend; Nesting, Devide and Conquer |
 |04| Navigation| A primary example of a responsive navigation bar with a hamburger menu (HTML, SCSS, JS) |
 |05| Bootstrap| The very basics of using Bootstrap |
+|06| Onepager| Basic examples of onepager websites |
+|07| Gradients | Some examples of radial and other variants of gradients ("Farbverläufe") |
 
 
 <br />
