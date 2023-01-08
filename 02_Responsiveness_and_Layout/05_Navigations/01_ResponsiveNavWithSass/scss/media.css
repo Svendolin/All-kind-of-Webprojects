@@ -1,20 +1,15 @@
-@import "colors"; // Importing colors.scss
-
-
-// Media queries
 @media (max-width: 1300px) {
   header {
     padding: 14px 2%;
-    transition: .2s;
+    transition: 0.2s;
   }
   .navbar a {
     padding: 5px 0;
     margin: 0px 20px;
   }
 }
-
 @media (max-width: 1090px) {
-  #menu-icon { // Hamburger menu should appear at 1090px
+  #menu-icon {
     display: block;
   }
   .navbar {
@@ -22,28 +17,28 @@
     top: 100%;
     right: -100%;
     width: 270px;
-    height: 29vh;
-    background: $main-color;
+    height: 16rem;
+    background: #fd8829;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; // due to the flex-direction: column it will be in the top on Y-axis
+    justify-content: flex-start;
     border-radius: 10px;
-    transition: all .50s ease;
+    transition: all 0.5s ease;
   }
   .navbar a {
     display: block;
     margin: 12px 0;
     padding: 0 25px;
-    transition: all .50s ease;
+    transition: all 0.5s ease;
   }
   .navbar a:hover {
-    color: $bg-color;
+    color: #222327;
     transform: translateY(5px);
   }
   .navbar a.active {
-    color: $text-color;
+    color: #fff;
   }
   .navbar.open {
     right: 2%;
   }
-}
+}/*# sourceMappingURL=media.css.map */
