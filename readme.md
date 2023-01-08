@@ -43,7 +43,7 @@ Over here you're going to find all kind of webrpojects such as the small ones an
 |05| Bootstrap| The very basics of using Bootstrap |
 |06| Onepager| Basic examples of onepager websites |
 |07| Gradients | Some examples of radial and other variants of gradients ("Farbverläufe") |
-
+|08| Hover and Keyframes | Basic animations which you can do by using :hover and @keyframes{} |
 
 <br />
 <br />

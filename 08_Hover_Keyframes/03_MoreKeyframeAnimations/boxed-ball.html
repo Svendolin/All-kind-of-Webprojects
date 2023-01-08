@@ -1,0 +1,92 @@
+<html>
+    <head>
+        <style>
+            
+            .box {
+                width:800px;
+                height:500px;
+                border:2px solid black;
+                background:lightgrey;
+                animation: color 10s step-end;
+            }
+            
+            .littleball {
+                width:12px;
+                height:12px;
+                background:white;
+                border-radius:6px;
+                margin-left:19px;
+                transform-origin:50% 25px;
+                animation: rotate 1s infinite linear;
+            }
+            
+            .ball2 .littleball {
+                animation-direction:reverse;
+                animation-delay:1s;
+            }
+            
+            .ball {
+                width:50px;
+                height:50px;
+                border-radius:25px;
+                background:red;
+                margin-left:375px;
+                animation-duration:10s;
+                animation-name:flight;
+                animation-timing-function:linear;
+                animation-iteration-count:infinite;
+                position:absolute;
+            }
+            
+            .ball2 {
+                width:50px;
+                height:50px;
+                border-radius:25px;
+                background:red;
+                margin-left:375px;
+                animation-duration:10s;
+                animation-name:flight;
+                animation-direction:reverse;
+                animation-timing-function:linear;
+                animation-iteration-count:infinite;
+                animation-delay:1s;
+            }
+            
+            @keyframes flight {
+                0% {transform:translate(+0, +0);}
+                22% {transform:translate(+375px, +200px);}
+                37% {transform:translate(+250px, +450px);}
+                69% {transform:translate(-375px, +250px);}
+                0% {transform:translate(+0px, +0px);}
+            }
+            
+            @keyframes color {
+                0% {background:lightgrey;}
+                22% {background:yellow;}
+                37% {background:orange;}
+                69% {background:black;}
+                0% {background:lightgrey;}
+            }
+            
+            @keyframes rotate {
+                0% {transform:rotate(0deg);}
+                100% {transform:rotate(360deg);}
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="box">
+        
+            <div class="ball">
+                <div class="littleball"></div>
+            </div>
+            
+            <div class="ball2">
+                <div class="littleball"></div>
+            </div>
+            
+        
+        </div>
+    </body>
+</html>

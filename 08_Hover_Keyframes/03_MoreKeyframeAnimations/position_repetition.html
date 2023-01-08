@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Position Repetition</title>
+  <style>
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .container {
+      position: relative;
+      margin: 1rem;
+      width: 600px;
+      height: 300px;
+      background: lightblue;
+      border: solid 1px black;
+      animation: color 8s step-end infinite;
+    }
+
+    .large_ball {
+      width: 25px;
+      height: 25px;
+      background: red;
+      border-radius: 50%;
+      position: absolute;
+      left: 50%;
+      top: 0;
+
+      animation: movementFirst linear 8s infinite;
+    }
+
+    @keyframes movementFirst {
+      0% {
+        left: 50%;
+        top: 0;
+      }
+      25% {
+        left: calc(100% - 25px);
+        top: 50%;
+      }
+      50% {
+        top: calc(100% - 25px);
+        left: 40%;
+      }
+      75% {
+        top: 40%;
+        left: 0;
+      }
+      100% {
+        left: 50%;
+        top: 0;
+      }
+    }
+
+    @keyframes color {
+      0% {background:lightgrey;}
+      25% {background:yellow;}
+      50% {background:orange;}
+      75% {background:black;}
+      100% {background:lightgrey;}
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="large_ball">
+      <div class="small_ball"></div>
+    </div>
+    <!-- <div class="large_ball"></div> -->
+  </div>
+</body>
+</html>

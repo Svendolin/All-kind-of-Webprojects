@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition Example</title>
+    <style>
+
+.block {
+    width: 200px;
+    height: 200px;
+    background: red;
+    margin: 10px;
+}
+
+/* Keyframe zuweisen */
+.block.background {
+    animation: blueBackground 4s infinite;
+}
+
+.block.translate {
+    animation: moveRight 4s infinite;
+}
+
+.block.rotate {
+    animation: rotateRight 4s infinite;
+    animation-timing-function: linear;
+}
+
+/* Keyframes für Animation*/
+
+@keyframes blueBackground {
+    0% {background: red}
+    50% {background:blue}
+    100% {background: red}
+}
+
+@keyframes moveRight {
+    0% {transform: translateX(0);
+        background: red;
+}
+    50% {transform: translateX(600px);
+        background: yellow;
+    }
+    100% {transform: translateX(0);
+        background: red;
+    }
+}
+
+@keyframes rotateRight {
+    100% {
+        transform: rotate(360deg);
+
+    }
+}
+
+ </style>
+</head>
+<body>
+ <!-- Animation Exercise -->
+<div class="block background"></div>
+<div class="block translate"></div> 
+<div class="block rotate"></div> 
+
+</body>
+</html>
