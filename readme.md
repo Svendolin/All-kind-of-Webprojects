@@ -161,6 +161,23 @@ SASS / SCSS Documentation: https://sass-lang.com/documentation
 <br />
 
 ***
+<img align="left" alt="CSS Logo" width="35px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png" /> 
+
+## &nbsp;FLEXBOX and GRID-LAYOUT ✅ 
+***
+**Some notes about Flexbox**
+* test
+
+```scss
+// Test test
+
+```
+
+
+<br />
+<br />
+
+***
 <img align="left" alt="Bootstrap Logo" width="35px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/512px-Bootstrap_logo.svg.png" /> 
 
 ## &nbsp;BOOTSTRAP: ✅ 
