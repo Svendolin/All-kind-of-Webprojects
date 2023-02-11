@@ -1,0 +1,113 @@
+@import "scss/colors";
+@import "scss/media";
+
+
+/* === Small CSS Reset === */
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  color: $text-color;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  background-color: $bg-color;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; // To make sure the header is always on top
+  // box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between; // To have some space in between in X-axis
+  align-items: center; // Centered in Y-axis
+  background: transparent;
+  padding: 28px 12%; // X Y
+  transition: all .50s ease;
+}
+
+// Logo (A)
+.logo {
+  display: flex;
+  align-items: center;
+  & i {
+    color: $main-color;
+    font-size: 28px;
+    margin-right: 3px;
+  }
+  & span {
+    color: $main-color;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+}
+
+// Navigation menu in between logo and hamburger menu
+.navbar {
+  display: flex;
+  & a {
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 5px 0;
+    margin: 0 30px;
+    transition: all .50s ease;
+  }
+  & :hover {
+    color: $main-color;
+  }
+  & .active {
+    color: $main-color;
+  }
+}
+
+// Main section (with the hamburger menu)
+.main {
+  display: flex;
+  align-items: center;
+  & a {
+    margin-right: 25px;
+    margin-left: 20px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all .50s ease;
+  }
+  & :hover {
+    color: $main-color;
+  }
+}
+
+// User (Sign in)
+.user {
+  display: flex;
+  align-items: center;
+  & i {
+    color: $main-color;
+    font-size: 28px;
+    margin-right: 7px;
+  }
+}
+
+// Hamburger menu
+#menu-icon {
+  font-size: 35px;
+  cursor: pointer;
+  z-index: 10001;
+  display: none; // Hide the hamburger menu on desktop as default
+}
+
+
+
+
+

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Apple Store</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" /> <!-- 100% Breite soll auf jedem Gerät auch wirklich 100% anzeigen -->
+    <link href="css/normalize.css" rel="stylesheet" type="text/css" /> <!-- Vor main.css. da es vorher geladen werden muss. Ist für die Browserkompabilität -->
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: [
+            'Open Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic',
+          ],
+        },
+      });
+    </script> <!-- Schriftlink, ähnlich wie @import -->
+  </head>
+  <body>
+
+  <!----------------------------------------- Navigation ----------------------------------------->
+
+
+    <nav class="nav-bar">
+      <a href="https://apple.com" class="logo-link">
+        <img src="images/logo.svg" alt="Apple logo" class="logo-icon" />  <!-- IMG vorteilhaft für inhaltsrelevante Bilder, Barrierefreieheit und alt tag -->
+        <h3 class="logo-text">Apple</h3>
+      </a>
+      <div class="nav-items">
+        <ul class="nav-ul">
+          <li class="nav-li">
+            <a class="nav-text">iPhone</a>
+          </li>
+          <li class="nav-li">
+            <a class="nav-text">Mac</a>
+          </li>
+          <li class="nav-li">
+            <a class="nav-text">iPad</a>
+          </li>
+          <li class="nav-li">
+            <a class="nav-text">Watch</a>
+          </li>
+        </ul>
+        <div role="button" class="buy-now-button">        <!-- Role ist wichtig für den Screenreader, Barrierefreiheit -->
+          <p class="button-text">Buy now</p>
+        </div>
+      </div>
+      <div role="button" class="mobile-nav-button">
+        <img
+          src="images/navburger-icon.svg"
+          alt="Navigation burger icon"
+          class="menu-icon"
+        />
+        <p class="button-text">Menu</p>
+      </div>
+    </nav>
+    
+  <!----------------------------------------- HERO SECTION (MAIN) ----------------------------------------->
+  
+    <div class="hero">
+      <div class="hero-left">
+      <main class="hero-content-container">
+        <h1 class="hero-h1"> Lorem <br> ipsum dolor</h1>
+        <h2 class="hero-h2"> Animi consequatur dolor voluptatem esse.</h2>
+        <div role="button" class="hero-button">
+          <p class="button-text">Find out more</p>
+        </div>
+      </main>
+    </div>
+    <div class="hero-right">
+      <aside class="hero-image">
+        <div class="image-slider-container">
+          <p class="slider-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea non sed soluta!</p>
+          <div class="slider-controls-container">
+            <div role="button left" class="control">
+              <img src="images/arrow-icon.svg" alt="Arrow Icon" class="arrow-icon">
+            </div>
+            <div role="button right" class="control right">
+              <img src="images/arrow-icon.svg" alt="Arrow Icon" class="arrow-icon right">
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <!----------------------------------------- HERO SECTION (MAIN) ----------------------------------------->
+  <section class="gallery">
+    <h2 class="gallery-h2">Lorem <br />ipsum dolor</h2>
+    <div class="gallery-container">
+      <div class="gallery-image">
+        <img
+          src="images/001.jpg"loading="lazy"alt="Person sitting on an empty street in the forest"sizes="(max-width: 767px) 80vw, (max-width: 991px) 12vw, 25vw"
+          srcset="
+            images/001-p-500.jpeg   500w,
+            images/001-p-800.jpeg   800w,
+            images/001-p-1080.jpeg 1080w,
+            images/001-p-1600.jpeg 1600w,
+            images/001-p-2000.jpeg 2000w,
+            images/001-p-2600.jpeg 2600w,
+            images/001-p-3200.jpeg 3200w,
+            images/001.jpg         3456w
+          "
+          class="image"
+        />
+      </div>
+      <div class="gallery-image">
+        <img
+          src="images/002.jpg"loading="lazy"alt="Aerial view of green trees and a lake"sizes="(max-width: 767px) 80vw, (max-width: 991px) 12vw, 25vw"
+          srcset="
+            images/002-p-500.jpeg   500w,
+            images/002-p-800.jpeg   800w,
+            images/002-p-1080.jpeg 1080w,
+            images/002-p-1600.jpeg 1600w,
+            images/002-p-2000.jpeg 2000w,
+            images/002.jpg         2242w
+          "
+          class="image"
+        />
+      </div>
+      <div class="gallery-image">
+        <img
+          src="images/003.jpg"loading="lazy"alt="Brown building next to a street"sizes="(max-width: 767px) 80vw, (max-width: 991px) 12vw, 25vw"
+          srcset="
+            images/003-p-500.jpeg   500w,
+            images/003-p-800.jpeg   800w,
+            images/003-p-1080.jpeg 1080w,
+            images/003-p-1600.jpeg 1600w,
+            images/003-p-2000.jpeg 2000w,
+            images/003-p-2600.jpeg 2600w,
+            images/003-p-3200.jpeg 3200w,
+            images/003.jpg         4160w
+          "
+          class="image"
+        />
+      </div>
+      <div class="gallery-image">
+        <img
+          src="images/004.jpg"loading="lazy"alt="Table with two cups of tea"sizes="(max-width: 767px) 100vw, (max-width: 991px) 12vw, 25vw"
+          srcset="
+            images/004-p-500.jpeg   500w,
+            images/004-p-800.jpeg   800w,
+            images/004-p-1080.jpeg 1080w,
+            images/004-p-1600.jpeg 1600w,
+            images/004-p-2000.jpeg 2000w,
+            images/004-p-2600.jpeg 2600w,
+            images/004.jpg         3177w
+          "
+          class="image"
+        />
+      </div>
+      <div class="gallery-image">
+        <img
+          src="images/005.jpg"loading="lazy"alt="Forest full of snow"sizes="(max-width: 767px) 100vw, (max-width: 991px) 12vw, 25vw"
+          srcset="
+            images/005-p-500.jpeg   500w,
+            images/005-p-800.jpeg   800w,
+            images/005-p-1080.jpeg 1080w,
+            images/005-p-1600.jpeg 1600w,
+            images/005-p-2000.jpeg 2000w,
+            images/005-p-2600.jpeg 2600w,
+            images/005-p-3200.jpeg 3200w,
+            images/005.jpg         3456w
+          "
+          class="image"
+        />
+      </div>
+      <div class="gallery-image">
+        <img
+          src="images/006.jpg"loading="lazy"alt="Various instruments"sizes="(max-width: 991px) 100vw, 25vw"
+          srcset="
+            images/006-p-500.jpeg   500w,
+            images/006-p-800.jpeg   800w,
+            images/006-p-1080.jpeg 1080w,
+            images/006-p-1600.jpeg 1600w,
+            images/006-p-2000.jpeg 2000w,
+            images/006-p-2600.jpeg 2600w,
+            images/006-p-3200.jpeg 3200w,
+            images/006.jpg         4160w
+          "
+          class="image"
+        />
+      </div>
+    </div>
+    <div role="button" class="load-more-button">
+      <p class="button-text">Load more</p>
+    </div>
+  </section>
+</body>
+</html>

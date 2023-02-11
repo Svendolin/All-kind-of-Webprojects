@@ -30,6 +30,16 @@ Over here you're going to find all kind of webrpojects such as the small ones an
 <br />
 
 ***
+<img align="left" alt="Angrytools Logo" width="35px" src="https://www.saashub.com/images/app/service_logos/23/f89c966856db/large.png?1639035319" />
+
+## &nbsp;Tools to make your coder's life easier: ✅
+***
+
+* Tools like CSS Generator, Image Tools, Text Conversion or Android Dveleoptment Tools are you going to find [HERE via ANGRYTOOLS](https://angrytools.com/)
+<br />
+<br />
+
+***
 <img align="left" alt="Projects" width="35px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/MS_Project_Logo.png/480px-MS_Project_Logo.png" /> 
 
 ## &nbsp;Our Projects: ✅ 
@@ -44,6 +54,24 @@ Over here you're going to find all kind of webrpojects such as the small ones an
 |06| Onepager| Basic examples of onepager websites |
 |07| Gradients | Some examples of radial and other variants of gradients ("Farbverläufe") |
 |08| Hover and Keyframes | Basic animations which you can do by using :hover and @keyframes{} |
+
+<br />
+<br />
+
+***
+<img align="left" alt="CSS Logo" width="35px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png" /> 
+
+## &nbsp;FLEXBOX and GRID-LAYOUT ✅ 
+***
+**Some notes about GRID:**
+* GRID LAYOUT is a two-dimensional system, meaning it can handle both columns and rows, unlike flexbox which is largely a one-dimensional system. Grid tends to be better for larger applications, while flexbox is better for smaller components.
+* Be sure to CHECK OUT [GRID LAYOUT-IT GENERATOR](https://grid.layoutit.com/) for a quick and easy way to create a grid layout!
+* If you want to play games to learn grid, check out [CSS Diner](https://flukeout.github.io/) and [CSS Grid Garden](https://cssgridgarden.com/).
+
+**Some notes about FLEXBOX:**
+* FLEX BOX is a one-dimensional layout method for laying out items in rows or columns. It helps you distribute space among items in an interface and align them neatly.
+* Be sure to CHECK OUT [ANGRYTOOLS FLEXBOX GENERATOR](https://angrytools.com/css-flex/) for a quick and easy way to create a flexbox layout!
+* If you want to play games to learn flexbox, check out [Flexbox Froggy](https://flexboxfroggy.com/) and [Flexbox Defense](http://www.flexboxdefense.com/).
 
 <br />
 <br />
@@ -160,22 +188,7 @@ SASS / SCSS Documentation: https://sass-lang.com/documentation
 <br />
 <br />
 
-***
-<img align="left" alt="CSS Logo" width="35px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png" /> 
 
-## &nbsp;FLEXBOX and GRID-LAYOUT ✅ 
-***
-**Some notes about Flexbox**
-* test
-
-```scss
-// Test test
-
-```
-
-
-<br />
-<br />
 
 ***
 <img align="left" alt="Bootstrap Logo" width="35px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/512px-Bootstrap_logo.svg.png" /> 
