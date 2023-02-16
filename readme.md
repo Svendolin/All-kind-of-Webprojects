@@ -46,6 +46,7 @@ Over here you're going to find all kind of webrpojects such as the small ones an
 ***
 | PROJECT | TITLE | CONTENT |
 |:--------------| :--------------| :--------------|
+|00| CSS | Important CSS topics such as working with Selectors, Positioning |
 |01| BIRTHDAY CARD | Animated Birthday Card for a friend (HTML, CSS) |
 |02| RESPONSIVENESS | All about resonsive topics such as flexbox, grid, media queries, tables, navigations and sliders (HTML,CSS) |
 |03| SCSS / SASS | A small onepager website to test the basic structures of SCSS / SASS, Mixins, Extend; Nesting, Devide and Conquer |
@@ -84,6 +85,12 @@ Over here you're going to find all kind of webrpojects such as the small ones an
 |CH| Character limits | Instead of using breaks, you can use CH to limit the amount of characters in a line. (Perfectly in text boxes)|
 
 <img align="center" alt="Canvas Picture" src="https://res.cloudinary.com/practicaldev/image/fetch/s--a4-V95uf--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/2v0z3jkdsqzhgi7kfcj5.png" /> <br>
+
+**POSITIONING (check out the visible example at 00_CSS**
+| TYPE | ATTRIBUTES |
+|:--------------|:--------------| 
+| STATC | It's the default value. The element is positioned according to the normal flow of the document. The top, right, bottom, and left properties have no effect. |
+|ABSOLUTE| Elements that are declared as absolute are "removed" from the document. The top, right, bottom, and left properties have an effect! The element (e.g. "Item") will address the parent element (e.g. "Container") if the parent was positioned with RELATIVE. Otherwise it is always passed on the next parental element and moves on if there is no assignment until the "body". With "Z-Index" we can position it over or under other items! | 
 
 <br />
 <br />

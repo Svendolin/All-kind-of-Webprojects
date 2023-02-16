@@ -11,6 +11,13 @@ body {
   background: #222;
 }
 
+/* IMPORTANT NOTE:
+    Parental Element "CONTAINER" is assigned with:
+  - Position: Relative;
+  (which means, that the child elements will focus on that.
+  If all the other parents have no position assignement,
+  they will be positioned according to the body)
+*/
 .container {
   margin: 4rem auto;
   width: 800px;
@@ -20,6 +27,7 @@ body {
   position: relative;
 }
 
+/* All the "Box" Elements with that class do have these values */
 .box {
   height: 100px;
   width: 100px;
@@ -28,6 +36,7 @@ body {
   font-weight: 500;
 }
 
+/* Default Positioning. Top, bottom etc doesnt work */
 .static {
   border: solid 1px lime;
   background: rgb(82, 255, 82);
@@ -41,6 +50,7 @@ body {
   z-index: 1;
 }
 
+/* Absolute Positioning to their parent. Top, Bottom etc works */
 .absolute {
   border: solid 1px rgb(255, 105, 105);
   background: rgb(255, 138, 138);
