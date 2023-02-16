@@ -73,6 +73,18 @@ Over here you're going to find all kind of webrpojects such as the small ones an
 * Be sure to CHECK OUT [ANGRYTOOLS FLEXBOX GENERATOR](https://angrytools.com/css-flex/) for a quick and easy way to create a flexbox layout!
 * If you want to play games to learn flexbox, check out [Flexbox Froggy](https://flexboxfroggy.com/) and [Flexbox Defense](http://www.flexboxdefense.com/).
 
+**UNITS and their use case:**
+| TYPE | USE CASE | EXPLENATION |
+|:--------------|:--------------| :--------------|
+|PX| Font Sizes | Typical FIXED SIZE mesurement of legth - 1px is always the smallest with to make a line / object visible (16PX is the default size popular browsers) |
+| EM | Paddings, margins, widths | Relative to the font-size of the PARENT-element (2em means 2 times the size of the current font) |
+| REM | Font Sizes | - Relative to the font-size of the ROOT-element - Typical RESPONSIVE SIZE mesurement of legth |
+| % | Sizing relative to parent, for widths and heights | Always relative to the parent element (like 50% width of the parental element) |
+| vw and vh | Sizing relative to viewport for widths and heights | Relative to the viewport width and height (not to their parent element), which means child elements can overflow the actual element |
+|CH| Character limits | Instead of using breaks, you can use CH to limit the amount of characters in a line. (Perfectly in text boxes)|
+
+<img align="center" alt="Canvas Picture" src="https://res.cloudinary.com/practicaldev/image/fetch/s--a4-V95uf--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/2v0z3jkdsqzhgi7kfcj5.png" /> <br>
+
 <br />
 <br />
 
