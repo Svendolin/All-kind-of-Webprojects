@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display Property</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      *,
+      *::after,
+      *::before {
+        box-sizing: border-box;
+      }
+
+      p {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin: 10px;
+      }
+      /* Block Element:
+      - div are already block elements, therefore no "display: Block" necessary
+      - height value does work
+      */
+      .block {
+        color: white;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 1rem;
+        font-weight: 500;
+        border: solid 1px hotpink;
+        background: rgb(255, 138, 197);
+        padding: 10px;
+        margin: 10px;
+        height: 100px;
+      }
+
+      /* Inline Element:
+      - span (text in general) are already inline elements
+      - height and margin value DOES NOT work
+      */
+      span {
+        color: white;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 1rem;
+        font-weight: 500;
+        border: solid 1px rgb(255, 105, 105);
+        background: rgb(255, 138, 138);
+        padding: 10px;
+        margin: 10px; /* DOES NOT WORK */
+        height: 10px; /* DOES NOT WORK */
+      }
+
+      .customized-inline {
+        display: block;
+        color: white;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 1rem;
+        font-weight: 500;
+        border: solid 1px rgb(255, 105, 105);
+        background: rgb(255, 138, 138);
+        padding: 10px;
+        margin: 10px; /* DOES NOT WORK */
+        height: 100px; /* DOES NOT WORK */
+      }
+
+      .inline-block {
+        display: inline-block;
+        color: white;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 1rem;
+        font-weight: 500;
+        border: solid 1px lime;
+        background: rgb(82, 255, 82);
+        padding: 10px;
+        margin: 10px; /* DOES NOT WORK */
+        height: 100px; /* DOES NOT WORK */
+      }
+    </style>
+  </head>
+  <body>
+    <p>Block</p>
+    <div class="block">Block Element</div>
+    <div class="block">Another Block Element</div>
+    <p>Inline</p>
+    <span>Inline-Element</span>
+    <span>Inline-Element with some more content inside</span>
+    <span class="customized-inline">Inline-Element with "display:block"</span>
+    <p>Inline-Block</p>
+    <span class="inline-block">Inline-Block-Element</span>
+    <span class="inline-block">Slightly bigger Inline-Block-Element</span>
+  </body>
+</html>

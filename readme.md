@@ -46,7 +46,7 @@ Over here you're going to find all kind of webrpojects such as the small ones an
 ***
 | PROJECT | TITLE | CONTENT |
 |:--------------| :--------------| :--------------|
-|00| CSS | Important CSS topics such as working with Selectors, Positioning |
+|00| CSS | Important CSS topics such as working with Selectors, Positioning, the display- and box sizing property |
 |01| BIRTHDAY CARD | Animated Birthday Card for a friend (HTML, CSS) |
 |02| RESPONSIVENESS | All about resonsive topics such as flexbox, grid, media queries, tables, navigations and sliders (HTML,CSS) |
 |03| SCSS / SASS | A small onepager website to test the basic structures of SCSS / SASS, Mixins, Extend; Nesting, Devide and Conquer |
@@ -69,28 +69,50 @@ Over here you're going to find all kind of webrpojects such as the small ones an
 * Be sure to CHECK OUT [GRID LAYOUT-IT GENERATOR](https://grid.layoutit.com/) for a quick and easy way to create a grid layout!
 * If you want to play games to learn grid, check out [CSS Diner](https://flukeout.github.io/) and [CSS Grid Garden](https://cssgridgarden.com/).
 
-**Some notes about FLEXBOX:**
+**Some notes about _FLEXBOX_:**
 * FLEX BOX is a one-dimensional layout method for laying out items in rows or columns. It helps you distribute space among items in an interface and align them neatly.
 * Be sure to CHECK OUT [ANGRYTOOLS FLEXBOX GENERATOR](https://angrytools.com/css-flex/) for a quick and easy way to create a flexbox layout!
 * If you want to play games to learn flexbox, check out [Flexbox Froggy](https://flexboxfroggy.com/) and [Flexbox Defense](http://www.flexboxdefense.com/).
 
-**UNITS and their use case:**
+**_UNITS_ and their use case:**
 | TYPE | USE CASE | EXPLENATION |
 |:--------------|:--------------| :--------------|
 |PX| Font Sizes | Typical FIXED SIZE mesurement of legth - 1px is always the smallest with to make a line / object visible (16PX is the default size popular browsers) |
 | EM | Paddings, margins, widths | Relative to the font-size of the PARENT-element (2em means 2 times the size of the current font) |
 | REM | Font Sizes | - Relative to the font-size of the ROOT-element - Typical RESPONSIVE SIZE mesurement of legth |
 | % | Sizing relative to parent, for widths and heights | Always relative to the parent element (like 50% width of the parental element) |
-| vw and vh | Sizing relative to viewport for widths and heights | Relative to the viewport width and height (not to their parent element), which means child elements can overflow the actual element |
+| VW / VH | Sizing relative to viewport for widths and heights | Relative to the viewport width and height (not to their parent element), which means child elements can overflow the actual element |
 |CH| Character limits | Instead of using breaks, you can use CH to limit the amount of characters in a line. (Perfectly in text boxes)|
 
 <img align="center" alt="Canvas Picture" src="https://res.cloudinary.com/practicaldev/image/fetch/s--a4-V95uf--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/2v0z3jkdsqzhgi7kfcj5.png" /> <br>
 
-**POSITIONING (check out the visible example at 00_CSS**
+<br />
+<hr>
+<br />
+
+**_POSITIONING_ (check out the visible example at 00_CSS):**
 | TYPE | ATTRIBUTES |
 |:--------------|:--------------| 
-| STATC | It's the default value. The element is positioned according to the normal flow of the document. The top, right, bottom, and left properties have no effect. |
-|ABSOLUTE| Elements that are declared as absolute are "removed" from the document. The top, right, bottom, and left properties have an effect! The element (e.g. "Item") will address the parent element (e.g. "Container") if the parent was positioned with RELATIVE. Otherwise it is always passed on the next parental element and moves on if there is no assignment until the "body". With "Z-Index" we can position it over or under other items! | 
+| STATIC | By default, the position property for all HTML elements in CSS is set to static. This means that if you don't specify any other position value or if the position property is not declared explicitly, it'll be static. The element is positioned according to the normal flow of the document. The top, right, bottom, and left as well as z-index properties have no effect. |
+|ABSOLUTE| Elements that are declared as absolute are "removed" in the normal flow of the document. The top, right, bottom, and left properties have an effect! The element (e.g. "Item") will address the parent element (e.g. "Container") if the parent was positioned with RELATIVE. Otherwise it is always passed on the next parental element and moves on if there is no assignment until the "body". With "Z-Index" we can position it over or under other items! | 
+| RELATIVE | Elements REMAIN in the normal flow of the document with. If you use it in a parent element, it will decisive for the child element. The top, right, bottom, and left as well as z-index properties are effective. |
+|FIXED| Same as ABSOLUTE but the element is always positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled (header or footer, which means top:0 or bottom:0 can be used) |
+| STICKY | Elements are positioned based on the user's scroll position. A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like a fixed position). |
+
+<img align="center" alt="Canvas Picture" src="https://www.cleonix.com/blog/wp-content/uploads/2019/03/blog-15-03-1.png" /> <br>
+
+<br />
+<hr>
+<br />
+
+**_DISPLAY_ Properties (check out the visible example at 00_CSS):**
+| TYPE | DEFAULT | ATTRIBUTES |
+|:--------------|:--------------| :--------------| 
+|BLOCK| div | "As wide as possible, as high as necessary": Elements do have full width, height and margin can be defined. Block elements take up the whole web page, they are always below each other and cannot be arranged next to each other. Block elements always have a new line.| 
+|INLINE| span and text|"As wide as necessary, as high as necessary": Elements are as wide as the content, height and margin cant be adjusted unless you use "line-height", "font-size" or in our case into "display: inline-block"| 
+|INLINE-BLOCK| Images, divs, buttons, text etc. | They behave like block elements (can be adjusted in height and margin) but these are still as wide and as high as necessary like the inline variant |
+
+
 
 <br />
 <br />
@@ -218,7 +240,7 @@ SASS / SCSS Documentation: https://sass-lang.com/documentation
 * Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains CSS- and (optionally) JavaScript-based design templates for typography, forms, buttons, navigation and other interface components.
 
 ```scss
-// Test test
+// SEE MORE AT 05_Bootstrap folder
 
 ```
 
