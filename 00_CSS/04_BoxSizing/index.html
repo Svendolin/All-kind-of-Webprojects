@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Sizing Property</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      p {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin: 10px;
+      }
+
+      .div1,.div2,.div3,.div4 {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 0.8rem;
+        font-weight: 500;
+        color: white;
+      }
+
+      /* div1 and div2 are content-box */
+
+      .div1 {
+        width: 300px;
+        height: 100px;
+        border: solid 1px rgb(255, 105, 105);
+        background: rgb(255, 138, 138);
+        margin: 10px;
+      }
+
+      .div2 {
+        width: 300px;
+        height: 100px;
+        padding: 50px;
+        order: solid 1px hotpink;
+        background: rgb(255, 138, 197);
+        margin: 10px;
+      }
+
+      /* div3 and div4 are border-box */
+
+      .div3 {
+        box-sizing: border-box;
+        width: 300px;
+        height: 100px;
+        border: solid 1px lime;
+        background: rgb(82, 255, 82);
+        margin: 10px;
+      }
+
+      .div4 {
+        box-sizing: border-box;
+        width: 300px;
+        height: 100px;
+        padding: 50px;
+        border: solid 1px lime;
+        background: rgb(82, 255, 82);
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Without Box-Sizing</p>
+    <div class="div1">
+      This div is smaller (width is 300px and height is 100px).
+    </div>
+    <br />
+    <div class="div2">
+      This div is bigger (width is also 300px and height is 100px).
+    </div>
+
+    <p>With box-sizing</p>
+
+    <div class="div3">Both divs are the same size now!</div>
+    <br />
+    <div class="div4">Hooray!</div>
+  </body>
+</html>
