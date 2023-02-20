@@ -70,6 +70,10 @@ Over here you're going to find all kind of webrpojects such as the small ones an
 
 * If you want to play games to learn grid, check out [CSS Diner](https://flukeout.github.io/) and [CSS Grid Garden](https://cssgridgarden.com/).
 
+<br />
+<hr>
+<br />
+
 **Some notes about _FLEXBOX_:**
 * IMPORTANT: [ANGRYTOOLS FLEXBOX GENERATOR](https://angrytools.com/css-flex/) for a quick and easy way to create a flexbox layout!
 * FLEX BOX is a one-dimensional layout method for laying out items in rows or columns. It helps you distribute space among items in an interface and align them neatly.
