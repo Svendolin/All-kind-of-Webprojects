@@ -84,7 +84,32 @@ Over here you're going to find all kind of webrpojects such as the small ones an
 <hr>
 <br />
 
-**_CSS VARIABLES_ (some notes):**
+**_CSS RESET_ (small one):**
+* CSS Reset is a small CSS file that resets the default styling of all HTML elements to a consistent baseline. This makes it easier to build websites because you don't have to spend time overriding the default styling of every element.
+
+* The tinest version down below can be added at the very top of your CSS file:
+
+```css
+
+/* === Small CSS Reset === */
+*{
+  margin: 0;
+  padding: 0;
+}
+*, *::after, *::before{
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/* If you set box-sizing: border-box; on an element, padding and border are included in the width and height */
+
+```
+
+<br />
+<hr>
+<br />
+
+**_CSS STYLE VARIABLES_ (some notes):**
 * CSS Variables are a way to store values that can be used in multiple places throughout a stylesheet. They are defined using the --custom-property syntax, and are accessed using the var() function:
 
 ```css
