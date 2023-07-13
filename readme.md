@@ -26,6 +26,8 @@ Over here you're going to find all kind of webrpojects such as the small ones an
 
 * Still some of the best tutorials for beginners: https://www.w3schools.com/ (sign up for tracked courses)
 
+* The Wiki for coders: https://developer.mozilla.org/en-US/docs/Learn 
+
 <br />
 <br />
 
@@ -194,7 +196,7 @@ linear-gradient(direction, color-stop1, color-stop2, ...);
 |INLINE| span and text|"As wide as necessary, as high as necessary": Elements are as wide as the content, height and margin cant be adjusted unless you use "line-height", "font-size" or in our case into "display: inline-block"| 
 |INLINE-BLOCK| Images, divs, buttons, text etc. | They behave like block elements (can be adjusted in height and margin) but these are still as wide and as high as necessary like the inline variant |
 
-<img align="center" alt="Canvas Picture" src="https://i0.wp.com/www.tutorialbrain.com/wp-content/uploads/2019/06/CSS-Display.png?fit=945%2C756&ssl=1" /> <br>
+<img align="center" alt="Display Examples" src="https://i.stack.imgur.com/mGTYI.png" /> <br>
 
 
 
@@ -322,9 +324,51 @@ SASS / SCSS Documentation: https://sass-lang.com/documentation
 ***
 **Some Notes about Bootstrap:**
 * Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains CSS- and (optionally) JavaScript-based design templates for typography, forms, buttons, navigation and other interface components.
+* In Bootstrap, we use ready-made components, so they don't have to be programmed from scratch. We can take them and then adapt and combine them to suit our needs.
 
-```scss
-// SEE MORE AT 05_Bootstrap folder
+**1) INSTALL Bootstrap**
+* The fastes way is to include it by CDN (Content Delivery Network) on their official website at https://getbootstrap.com/  like:
+```html
+<!-- When you only need to include Bootstrap’s compiled CSS or JS, you can use jsDelivr. If you need the full package when you work with Angular for example, be sure to take the NPM-Installment (also on their website) -->
+
+<!-- In the <head> -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+<!-- In the <head> with "defer" -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous" defer></script>
+
+```
+
+**2) DOCS Bootstrap**
+* Go to https://getbootstrap.com/docs/5.3/getting-started/introduction/ and check out the documentation to see how to use Bootstrap and how to implement it into your project.
+
+*A) Breakpoints*
+```html
+<!--
+  The BREAKPOINT sizes are (sm, md, lg, xl, xxl)
+  We start with the smallest phone size without class infix and go up while reading to the right side -->
+
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3"></div>
+```
+
+*B) Text Colour*
+```html
+<!-- TEXT COLOUR: Google it like "Bootstrap text color" and play with it -->
+<s class="price text-black-50">$ 429.-</s>
+<!-- Give it an extra touc-->
+<style>
+  .price {
+    font-size: 1.5rem;
+  }
+</style>
+
+```
+
+*C) Gap and Spacing*
+```html
+<!-- g-3 = Gap of three down the element -->
+<div class="row g-3 row-cols-1 row-cols-sm-2 row-cols-md-3">
+    <div class="col" repeat="5"> <!-- a column gap on the right hand side -->
 
 ```
 

@@ -1,0 +1,17 @@
+/* === Small CSS Reset === */
+*{
+  margin: 0;
+  padding: 0;
+}
+*, *::after, *::before{
+  box-sizing: border-box;
+}
+
+.price {
+  color: darkred;
+}
+
+.shop-image {
+  height: 180px;
+  object-fit: contain;
+}

@@ -41,11 +41,14 @@ h1, h2, h3, a {                             /* Allgemeine Anpassungen zur Schrif
 }
 
 h1 {                                        /* Abstände zwischen den Buchstaben */
-    letter-spacing: 3px;                    
+    letter-spacing: 3px;  
+    color: white;
+    text-shadow: 8px 8px 9px black;              
 }
 
 h2 {                                        /* Genauere Anpassungen zur Schrift */
-    color: #5d7177;
+    color: white;
+    text-shadow: 8px 8px 9px black;
 }
 
 h3 {
@@ -147,8 +150,6 @@ header nav ul li:hover {
 }
 
 #home h1 {                                      /* Feinheiten h1 */
-    background-color: white;
-    opacity: 0.8;
     font-size: 80px;
     padding: 10px;
     border-radius: 5px;
@@ -156,8 +157,6 @@ header nav ul li:hover {
 
 #home h2 {                                      /* Feinheiten h2 */
     font-size: 40px;
-    background-color: white;
-    opacity: 0.9;
     margin: 20px;
     padding: 5px;
     border-radius: 5px;

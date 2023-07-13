@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Webshop Mockup with Bootstrap</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"
+    defer></script>
+  <script src="js/code.js" defer></script>
+</head>
+
+<body>
+  <nav class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">My Webshop</a>
+    </div>
+  </nav>
+  <!-- 
+    Manually defined with Bootstrap classes:
+    row = Reihe
+    row-cols-1 = 1 Spalte standardmässig vom kleinsten Breakpoint (Mobile) starten...
+    row-cols-sm-2 = 2 Spalten für Tablets
+    row-cols-md-3 = 3 Spalten für small Laptops
+
+    Die Reihenfolge ist (sm, md, lg, xl, xxl)
+  
+  
+  -->
+  <div class="container">
+    <div class="row g-3 row-cols-1 row-cols-sm-2 row-cols-md-3">
+      <div class="col" repeat="9"> <!-- Defined in code.js -->
+        <div class="card shadow-sm">
+          <img class="shop-image" src="img/headphone{index}.jpg" alt="Headphones">
+          <!-- Index ersetzt durch jede Wiederholung die Zahl durch code.js -->
+          <div class="card-body">
+            <div class="text-black-50"> <!-- Gegoogelt "bootstrap text color" -->
+              Wireless headphone
+            </div>
+            <b>Product Name</b>
+            <div>
+              <b class="price">$ 399.-</b>
+              <s class="text-black-50">$ 429.-</s>
+            </div>
+            This is some text within a card body.
+          </div>
+        </div>
+      </div>
+    </div>
+
+</body>
+
+</html>
